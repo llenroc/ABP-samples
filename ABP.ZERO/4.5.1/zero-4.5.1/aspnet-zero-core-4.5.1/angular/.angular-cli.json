@@ -1,0 +1,165 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "abp-zero-template"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        {
+          "glob": "abp.signalr.js",
+          "input": "../node_modules/abp-web-resources/Abp/Framework/scripts/libs/",
+          "output": "./assets/abp/"
+        },
+        {
+          "glob": "**.*",
+          "input": "../node_modules/bootstrap-select/dist/js/i18n/",
+          "output": "./assets/localization/bootstrap-select/"
+        },
+        {
+          "glob": "**.*",
+          "input": "../node_modules/timeago/locales/",
+          "output": "./assets/localization/jquery-timeago/"
+        }
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "styles": [
+        "../node_modules/simple-line-icons/css/simple-line-icons.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/famfamfam-flags/dist/sprite/famfamfam-flags.css",
+
+        "../node_modules/bootstrap-select/dist/css/bootstrap-select.css",
+        "../node_modules/jquery.uniform/dist/css/default.css",
+        "../node_modules/toastr/build/toastr.css",
+        "../node_modules/sweetalert/dist/sweetalert.css",
+        "../node_modules/jstree/dist/themes/default/style.min.css",
+        "../node_modules/morris.js/morris.css",
+
+        "../src/assets/Jcrop/css/Jcrop.css",
+        "../node_modules/bootstrap-daterangepicker/daterangepicker.css",
+        "../node_modules/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css",
+
+        "../src/app/shared/core.less",
+        "../src/app/shared/layout/layout.less",
+        "../src/assets/bootstrap-datepicker/css/bootstrap-datepicker.min.css",
+        "../node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css",
+
+        "../node_modules/primeng/resources/primeng.min.css",
+        "../node_modules/primeng/resources/themes/bootstrap/theme.css",
+        "../src/assets/primeng/datatable/css/primeng.datatable.css",
+        "../src/assets/primeng/file-upload/css/primeng.file-upload.css",
+
+        "../node_modules/quill/dist/quill.core.css",
+        "../node_modules/quill/dist/quill.snow.css",
+
+        "styles.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/jquery-migrate/dist/jquery-migrate.min.js",
+        "../node_modules/jqueryui/jquery-ui.min.js",
+        "../node_modules/js-cookie/src/js.cookie.js",
+        "../node_modules/jstree/dist/jstree.min.js",
+
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../node_modules/bootstrap-select/dist/js/bootstrap-select.js",
+        "../node_modules/tether/dist/js/tether.min.js",
+
+        "../node_modules/lodash/lodash.min.js",
+        "../node_modules/moment/min/moment-with-locales.min.js",
+        "../node_modules/moment-timezone/builds/moment-timezone-with-data.min.js",
+
+        "../node_modules/signalr/jquery.signalR.js",
+
+        "../src/assets/Jcrop/js/Jcrop.js",
+        "../node_modules/morris.js/morris.min.js",
+        "../node_modules/raphael/raphael.min.js",
+        "../node_modules/jquery-sparkline/jquery.sparkline.min.js",
+
+        "../node_modules/toastr/toastr.js",
+        "../node_modules/sweetalert/dist/sweetalert-dev.js",
+        "../node_modules/block-ui/jquery.blockUI.js",
+        "../node_modules/spin.js/spin.min.js",
+        "../node_modules/spin.js/jquery.spin.js",
+
+        "../node_modules/bootstrap-daterangepicker/daterangepicker.js",
+        "../node_modules/jquery-slimscroll/jquery.slimscroll.min.js",
+        "../node_modules/timeago/jquery.timeago.js",
+        "../node_modules/localforage/dist/localforage.min.js",
+        "../node_modules/bootstrap-switch/dist/js/bootstrap-switch.min.js",
+        "../node_modules/push.js/bin/push.min.js",
+
+        "../node_modules/flot/jquery.flot.js",
+        "../node_modules/flot/jquery.flot.pie.js",
+        "../node_modules/flot/jquery.flot.resize.js",
+        "../node_modules/flot/jquery.flot.categories.js",
+        "../node_modules/flot/jquery.flot.time.js",
+        "../node_modules/waypoints/lib/jquery.waypoints.min.js",
+        "../node_modules/jquery.flot.tooltip/js/jquery.flot.tooltip.min.js",
+
+        "../node_modules/topojson/build/topojson.min.js",
+        "../node_modules/d3/d3.js",
+        "../node_modules/datamaps/dist/datamaps.world.min.js",
+        "../node_modules/easy-pie-chart/dist/easypiechart.js",
+        "../src/assets/common/scripts/horizontal-timeline/horizontal-timeline.js",
+
+        "../node_modules/abp-web-resources/Abp/Framework/scripts/abp.js",
+        "../node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js",
+        "../node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js",
+        "../node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js",
+        "../node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js",
+        "../node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js",
+        "../node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.moment.js",
+        "../src/assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js",
+        "../node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js",
+
+        "../src/assets/metronic/global/scripts/app.js",
+        "../src/assets/metronic/admin/layout4/scripts/layout.js",
+        "../src/assets/metronic/layouts/global/scripts/quick-sidebar.js",
+
+        "../node_modules/jquery.inputmask/dist/jquery.inputmask.bundle.js",
+
+        "../node_modules/quill/dist/quill.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "hmr": "environments/environment.hmr.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "files": "src/**/*.ts",
+      "project": "src/tsconfig.json"
+    },
+    {
+      "files": "e2e/**/*.ts",
+      "project": "e2e/tsconfig.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

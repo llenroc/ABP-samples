@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="de">
+  <texts>
+    <text name="HomePage" value="Startseite" />
+    <text name="AboutUs" value="Über uns" />
+    <text name="Administration" value="Administration" />
+    <text name="Roles" value="Rollen" />
+    <text name="Users" value="Benutzer" />
+    <text name="InvalidFormMessage" value="Ihre Eingabe ist inkorrekt. Bitte überprüfen und korrigieren Sie diese." />
+    <text name="InvalidUserNameOrPassword" value="Ungültiger Benutzername oder Password." />
+    <text name="ThereIsNoTenantDefinedWithName{0}" value="Es existiert kein Mandant mit dem Namen {0}" />
+    <text name="TenantIsNotActive" value="Mandant {0} ist nicht aktiviert." />
+    <text name="UserIsNotActiveAndCanNotLogin" value="Benutzer {0} ist nicht aktiviert und kann sich deshalb nicht anmelden." />
+    <text name="PleaseEnterLoginInformation" value="Bitte Anmeldeinformationen eingeben" />
+    <text name="TenancyName" value="Mandantenname" />
+    <text name="UserNameOrEmail" value="Benutzername oder E-Mail Adresse" />
+    <text name="Password" value="Passwort" />
+    <text name="RememberMe" value="Angemeldet bleiben" />
+    <text name="LogIn" value="Anmelden" />
+    <text name="ForgotPassword" value="Passwort vergessen?" />
+    <text name="DontYouHaveAnAccount" value="Noch kein Konto?" />
+    <text name="CreateAnAccount" value="Konto erstellen" />
+    <text name="Pages" value="Seiten" />
+    <text name="RoleName" value="Rollenname" />
+    <text name="EditRole" value="Rolle bearbeiten" />
+    <text name="CreateNewRole" value="Neue Rolle erstellen" />
+    <text name="RoleProperties" value="Rolleneigenschaften" />
+    <text name="Permissions" value="Berechtigungen" />
+    <text name="Save" value="Speichern" />
+    <text name="Cancel" value="Abbrechen" />
+    <text name="RolesHeaderInfo" value="Benutzen Sie Rollen um Berechtigungen zu gruppieren." />
+    <text name="Static" value="Statisch" />
+    <text name="Actions" value="Aktionen" />
+    <text name="Delete" value="Löschen" />
+    <text name="SavedSuccessfully" value="Erfolgreich gespeichert." />
+    <text name="AreYouSure" value="Sind Sie sicher?" />
+    <text name="YesDelete" value="Ja, löschen!" />
+    <text name="DeletingUser" value="Benutzer wird gelöscht" />
+    <text name="UsersHeaderInfo" value="Verwalten Sie Benutzer und Berechtigungen." />
+    <text name="CreateNewUser" value="Neuen Benutzer erstellen" />
+    <text name="UserName" value="Benutzername" />
+    <text name="Name" value="Vorname" />
+    <text name="Surname" value="Nachname" />
+    <text name="EmailAddress" value="E-Mail Adresse" />
+    <text name="LastLoginTime" value="Letzte Anmeldung" />
+    <text name="EditUser" value="Benutzer bearbeiten" />
+    <text name="UserInformations" value="Benutzer Informationen" />
+    <text name="PasswordRepeat" value="Passwort (wiederholen)" />
+    <text name="SuccessfullyDeleted" value="Erfolgreich gelöscht." />
+    <text name="RoleDeleteWarningMessage" value="Rolle {0} wird gelöscht und von allen assozierten Benutzern entfernt." />
+    <text name="UserDeleteWarningMessage" value="Benutzer {0} wird gelöscht." />
+    <text name="Active" value="Aktiviert" />
+    <text name="EmailConfirm" value="E-Mail bestätigen" />
+    <text name="Yes" value="Ja" />
+    <text name="No" value="Nein" />
+    <text name="MySettings" value="Meine Einstellungen" />
+    <text name="Logout" value="Abmelden" />
+    <text name="Reset" value="Zurücksetzten" />
+    <text name="ResetPermissionsTooltip" value="Dieser Schalter löscht alle Benutzer spezifischen Berechtigungen und speichert diese Einstellung. Der Benutzer wird nur noch Berechtigungen haben, welche aus seinen zugewiesenen Rollen existieren." />
+    <text name="ResetSuccessfully" value="Zurücksetzen erfolgreich." />
+    <text name="Tenants" value="Mandanten" />
+    <text name="TenantsHeaderInfo" value="Mandantenverwaltung" />
+    <text name="CreateNewTenant" value="Neuen Mandanten erstalten" />
+    <text name="TenancyCodeName" value="Mandatencode" />
+    <text name="TenantName" value="Mandantenname" />
+    <text name="TenantDeleteWarningMessage" value="Mandant {0} wird gelöscht." />
+    <text name="AdminEmailAddress" value="Administrator E-Mail" />
+    <text name="AdminPassword" value="Administrator Passwort" />
+    <text name="AdminPasswordRepeat" value="Administrator Passwort (wiederholen)" />
+    <text name="EditTenant" value="Mandant bearbeiten" />
+    <text name="ChangingPermissions" value="Berechtigungen werden geändert" />
+    <text name="EditingUser" value="Benutzer wird geändert" />
+    <text name="CreatingNewUser" value="Benutzer wird erstellt" />
+    <text name="Edit" value="Bearbeiten" />
+    <text name="EditingTenant" value="Mandant wird geändert" />
+    <text name="CreatingNewTenant" value="Neuer Mandant wird erstellt" />
+    <text name="DeletingTenant" value="Mandant wird gelöscht" />
+    <text name="EditingRole" value="Rolle wird geändert" />
+    <text name="CreatingNewRole" value="Rolle wird erstellt" />
+    <text name="DeletingRole" value="Rolle wird gelöscht" />
+    <text name="CreationTime" value="Erstellungszeitpunkt" />
+    <text name="SearchWithThreeDot" value="Suche..." />
+    <text name="ResetSpecialPermissions" value="Spezielle Berechtigungen zurücksetzen" />
+    <text name="SavingWithThreeDot" value="Speichere..." />
+    <text name="Settings" value="Einstellungen" />
+    <text name="SaveAll" value="Alle Änderungen speichern" />
+    <text name="SettingsHeaderInfo" value="Anwendungs-Einstellungen anzeigen und ändern." />
+    <text name="EmailSmtp" value="E-Mail (SMTP)" />
+    <text name="DefaultFromAddress" value="Standard Absenderadresse" />
+    <text name="DefaultFromDisplayName" value="Standard Absendername" />
+    <text name="SmtpHost" value="SMTP Server" />
+    <text name="SmtpPort" value="SMTP Port" />
+    <text name="UseDefaultCredentials" value="Standardmäßige Anmeldeinformationen benutzen" />
+    <text name="DomainName" value="Domainname" />
+    <text name="UseSsl" value="SSL verwenden" />
+    <text name="ThisWebSiteRootAddress" value="Basisaddresse der Webseite" />
+    <text name="ThisWebSiteRootAddress_Hint" value="Wird verwendet um Links zu dieser Webseite zu erstellen. Wird für Aufgaben wie Passwort zurücksetzten Links erstellen verwendet. Bsp.: http://meineseite.de/" />
+    <text name="General" value="Allgemein" />
+    <text name="SendPasswordResetLink_Information" value="Ein Link um das Passwort zurückzusetzten wird an Ihre E-Mail Adresse geschickt. Kontrollieren Sie bitte Ihren Spam-Filter oder versuchen Sie es bitte erneut, falls die E-Mail nicht innerhalb weniger Minuten eintrifft." />
+    <text name="Send" value="Senden" />
+    <text name="PasswordReset" value="Passwort zurücksetzen" />
+    <text name="InvalidUserNameOrEmailAddress" value="Ungültiger Benutzername oder E-Mail Adresse" />
+    <text name="PasswordResetEmail_Subject" value="Maves Passwort zurücksetzen" />
+    <text name="PasswordResetEmail_Title" value="Maves Passwort zurücksetzen." />
+    <text name="PasswordResetEmail_SubTitle" value="Diese E-Mail wurde Ihnen gesendet um Ihr Passwort zurück zu setzen." />
+    <text name="PasswordResetEmail_ClickTheLinkBelowToResetYourPassword" value="Bitte klicken Sie auf den unten stehenden Link um Ihr Passwort zurück zu setzen:" />
+    <text name="EmailActivation_Subject" value="Maves Konto E-Mail Aktivierung" />
+    <text name="EmailActivation_Title" value="Willkommen zu Maves." />
+    <text name="EmailActivation_SubTitle" value="Diese E-Mail dient der Bestätigung Ihrer E-Mail Adresse." />
+    <text name="EmailActivation_ClickTheLinkBelowToVerifyYourEmail" value="Bitte klicken Sie auf den unten stehenden Link um Ihre E-Mail Adresse zu bestätigen:" />
+    <text name="InvalidEmailAddress" value="Ungültige E-Mail Adresse" />
+    <text name="InvalidPasswordResetCode" value="Ungültiger Passwort zurück setzen Code" />
+    <text name="InvalidPasswordResetCode_Detail" value="Bitte stellen Sie sicher dass Sie diese Seite über den Link in Ihrer E-Mail aufrufen. Falls dies nicht das Problem löst, versuchen Sie eine neue Passwort zurück setzen E-Mail anzufordern." />
+    <text name="PleaseEnterYourNewPassword" value="Bitte geben Sie Ihr neues Passwort ein." />
+    <text name="UserEmailIsNotConfirmedAndCanNotLogin" value="Ihre E-Mail Adresse wurde noch nicht bestätigt. Bitte überprüfen Sie Ihre E-Mail und klicken Sie auf den Bestätigungslink. Falls Sie keine Aktivierungsemail erhalten haben, klicken Sie auf 'E-Mail bestätigen' um eine neue E-Mail anzufordern." />
+    <text name="LoginFailed" value="Anmeldung fehlgeschlagen!" />
+    <text name="InvalidEmailConfirmationCode" value="Ungültiger E-Mail Bestätigungs Code" />
+    <text name="InvalidEmailConfirmationCode_Detail" value="Bitte stellen Sie sicher dass Sie diese Seite über den Link in Ihrer E-Mail aufrufen." />
+    <text name="YourEmailIsConfirmedMessage" value="Ihre E-Mail Adresse wurde erfolgreich bestätigt." />
+    <text name="ShouldChangePasswordOnNextLogin" value="Passwort bei nächster Anmeldung ändern." />
+    <text name="SetRandomPassword" value="Zufälliges Passwort vergeben." />
+    <text name="EmailActivation" value="E-Mail Aktivierung" />
+    <text name="SendEmailActivationLink_Information" value="Ein Link zur Aktivierung wird Ihnen per E-Mail zugeschickt. Falls Sie nicht innerhalb weniger Minuten eine E-Mail erhalten, versuchen Sie es bitte erneut." />
+    <text name="SendActivationEmail" value="Aktivierungs E-Mail senden." />
+    <text name="ChangePassword" value="Passwort ändern" />
+    <text name="CurrentPassword" value="Aktuelles Passwort" />
+    <text name="NewPassword" value="Neues Passwort" />
+    <text name="NewPasswordRepeat" value="Neues Passwort (Wiederholung)" />
+    <text name="YourPasswordHasChangedSuccessfully" value="Ihr Passwort wurde erfolgreich geändert." />
+    <text name="SelfUserRegistrationIsDisabledMessage" value="Sie können sich nicht am System registrieren!" />
+    <text name="SelfUserRegistrationIsDisabledMessage_Detail" value="Selbstregistrierung für Benutzer ist deaktiviert. Kontaktieren Sie den Systemadministrator um sich zu registrieren." />
+    <text name="SuccessfullyRegistered" value="Erfolgreich registriert" />
+    <text name="ConfirmationMailSentPleaseClickLinkInTheEmail" value="Eine Bestätigungs E-Mail wird an {0} geschickt. Bitte klicken Sie auf den Link in der E-Mail um Ihre E-Mail Adresse zu bestätigen." />
+    <text name="YourAccountIsWaitingToBeActivatedByAdmin" value="Ihr Konto wartet auf Aktivierung durch den System Administrator." />
+    <text name="NameSurname" value="Vorname Nachname" />
+    <text name="UserManagement" value="Benutzerverwaltung" />
+    <text name="AllowUsersToRegisterThemselves" value="Erlaube Benutzern sich selbst am System zu registrieren." />
+    <text name="AllowUsersToRegisterThemselves_Hint" value="Wenn Sie dies deaktivieren, können Benutzer nur durch den Admin hinzugefügt werden." />
+    <text name="NewRegisteredUsersIsActiveByDefault" value="Neu registrierte Benutzer standardmäßig aktivieren." />
+    <text name="NewRegisteredUsersIsActiveByDefault_Hint" value="Wenn Sie dies deaktivieren, werden neue Benutzer nicht aktiviert sein (und können sich nicht anmelden) bis der Admin diese aktiviert." />
+    <text name="Default" value="Standard" />
+    <text name="DefaultRole_Description" value="Standardmäßig neuen Benutzern zuweisen." />
+    <text name="StaticRole_Tooltip" value="Statische Rollen können nicht gelöscht werden." />
+    <text name="EmailConfirmationRequiredForLogin" value="E-Mail Bestätigung wird vor dem anmelden benötigt." />
+    <text name="{0}UserCannotBeDeleted" value="{0} Benutzer kann nicht gelöscht werden." />
+    <text name="TenantNameCanNotBeEmpty" value="Mandantenname darf nicht leer sein" />
+    <text name="ExportToExcel" value="Nach Excel exportieren" />
+    <text name="ChangeProfilePicture" value="Profilbild ändern" />
+    <text name="TenantName_Regex_Description" value="Mandantenname muss aus mindestens 2 Buchstaben bestehen und mit einem Buchstaben beginnen." />
+    <text name="ProfilePicture_Change_Info" value="Sie können eine JPG/JPEG Datei mit maximal 30KB Größe auswählen." />
+    <text name="ProfilePicture_Change_Error" value="Es ist ein Fehler beim ändern des Profilbilds aufgetreten." />
+    <text name="ProfilePicture_Warn_SizeLimit" value="Bildergröße muss unter 30KB sein. Bitte wählen Sie eine andere Datei." />
+    <text name="ProfilePicture_Warn_FileType" value="Sie können nur JPG/JPEG Dateien wählen. Bitte wählen Sie eine andere Datei." />
+    <text name="Dashboard" value="Übersichtsseite" />
+    <text name="DashboardHeaderInfo" value="Statistiken und Berichte" />
+    <text name="GoToApplication" value="Zur Anwendung gehen" />
+    <text name="TenantInformations" value="Mandanteninformationen" />
+    <text name="PersonalInformations" value="Persönliche Informationen" />
+    <text name="AccountSettings" value="Kontoeinstellungen" />
+    <text name="Captha_Hint" value="Bitte geben Sie den Sicherheitscode unten ein:" />
+    <text name="Back" value="Zurück" />
+    <text name="Submit" value="Absenden" />
+    <text name="SignUp" value="Registrieren" />
+    <text name="CaptchaCanNotBeEmpty" value="Sicherheitscode darf nicht leer sein." />
+    <text name="IncorrectCaptchaAnswer" value="Sicherheitscode ist inkorrekt." />
+    <text name="FormIsNotValidMessage" value="Formular ist ungültig. Bitte korrigieren Sie die Fehler." />
+    <text name="CanNotChangeAdminUserName" value="Benutzername des Administrators kann nicht geändert werden." />
+    <text name="Error" value="Fehler!" />
+    <text name="OopsYouAreLost" value="Oops! You're lost." />
+    <text name="WeCanNotFindThePage" value="Wir konnten die Seite die Sie öffnen wollten nicht finden." />
+    <text name="DashboardDemo_Note_Title" value="Willkommen zu Maves!" />
+    <text name="DashboardDemo_Note_Info">
+      In this demo, you can use the left menu to test fully functional pages.
+      This dashboard page is just for demonstration purposes, texts and datas are meaningless.
+      Almost all datas are hard-coded in the client side, except the small MEMBER ACTIVITY graphs.
+      When you click the REFRESH button, graph data is requested from server and server generates random data.
+    </text>
+    <text name="WelcomePage_Title" value="Willkommen!" />
+    <text name="WelcomePage_Info" value="Willkommen in Maves. Sie können dieses Menü zum navigieren in der Anwendung verwenden. Falls Sie keine Menüpunkte sehen, fehlen Ihnen vermutlich die notwendigen Berechtigungen. Bitten Sie Ihren Systemadministrator Ihnen zusätzliche Berechtigungen zu geben." />
+    <text name="RequestedFileDoesNotExists" value="Angeforderte Datei konnte nicht gefunden werden!" />
+    <text name="MailSent" value="E-Mail gesendet" />
+    <text name="PasswordResetMailSentMessage" value="Ein Link zum zurück setzen Ihres Passwort wurde an Ihre E-Mail Adresse geschickt." />
+    <text name="ActivationMailSentMessage" value="Ein Aktivierungslink wurde an Ihre E-Mail Adresse geschickt. Bitte kontrollieren Sie Ihr Postfach." />
+    <text name="UseCaptchaOnRegistration" value="Geben Sie den Sicherheitscode (captcha) zum registrieren ein." />
+    <text name="FormBasedRegistration" value="Formular basierte Registrierung" />
+    <text name="LdapSettings" value="LDAP Einstellungen" />
+    <text name="EnableLdapAuthentication" value="LDAP Authentifizierung aktivieren." />
+    <text name="OtherSettings" value="Andere Einstellungen" />
+    <text name="AuditLogs" value="Audit Logs" />
+    <text name="Success" value="Erfolgreich" />
+    <text name="Time" value="Uhrzeit" />
+    <text name="Service" value="Service" />
+    <text name="Action" value="Aktion" />
+    <text name="Duration" value="Dauer" />
+    <text name="IpAddress" value="IP Adresse" />
+    <text name="Client" value="Client" />
+    <text name="Browser" value="Browser" />
+    <text name="Xms" value="{0} ms" />
+    <text name="Close" value="Schliessen" />
+    <text name="Refresh" value="Aktualisieren" />
+    <text name="ErrorState" value="Fehlerstatus" />
+    <text name="All" value="Alle" />
+    <text name="HasError" value="Fehler aufgetreten" />
+    <text name="ShowAdvancedFilters" value="Erweiterte Filtereinstellung anzeigen" />
+    <text name="HideAdvancedFilters" value="Erweiterte Filtereinstellung verstecken" />
+    <text name="AuditLogDetail" value="Audit log detail" />
+    <text name="Parameters" value="Parameter" />
+    <text name="DateRange" value="Zeitspanne" />
+    <text name="ActionInformations" value="Aktion Informationen" />
+    <text name="Today" value="Heute" />
+    <text name="Yesterday" value="Gestern" />
+    <text name="Last7Days" value="Letzte 7 Tage" />
+    <text name="Last30Days" value="Letzte 30 Tage" />
+    <text name="ThisMonth" value="Dieser Monat" />
+    <text name="LastMonth" value="Letzter Monat" />
+  </texts>
+</localizationDictionary>

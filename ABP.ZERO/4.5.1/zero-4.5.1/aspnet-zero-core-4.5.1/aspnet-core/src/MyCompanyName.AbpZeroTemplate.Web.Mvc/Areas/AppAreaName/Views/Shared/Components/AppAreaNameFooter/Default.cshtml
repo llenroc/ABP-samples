@@ -1,0 +1,17 @@
+﻿@using MyCompanyName.AbpZeroTemplate
+@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Layout
+@model FooterViewModel
+@{
+    Layout = null;
+}
+<div class="page-footer-inner">
+    <span class="text-muted">
+        <small>
+            @Model.GetProductNameWithEdition() <br />
+            v@(AppVersionHelper.Version) [@AppVersionHelper.ReleaseDate.ToString("yyyyMMdd")]
+        </small>
+    </span>
+</div>
+<div class="scroll-to-top">
+    <i class="icon-arrow-up"></i>
+</div>

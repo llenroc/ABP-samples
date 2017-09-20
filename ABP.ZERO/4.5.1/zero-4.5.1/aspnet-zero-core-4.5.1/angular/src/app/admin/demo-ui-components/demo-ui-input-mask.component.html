@@ -1,0 +1,68 @@
+﻿<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject"> Input Mask</span>
+        </div>
+    </div>
+    <div class="portlet-body">
+        <form role="form">
+            
+            <div class="form-group form-md-line-input form-md-floating-label row">
+                <label class="col-md-2 control-label">Date</label>
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <div class="input-group-control">
+                            <p-inputMask [(ngModel)]="dateValue" name="dateValue" mask="99/99/9999" placeholder="mm/dd/yyyy" slotChar="mm/dd/yyyy" styleClass="form-control"></p-inputMask>
+                        </div>
+                        <span class="input-group-btn btn-right">
+                            <button class="btn green-haze" type="button" (click)="submitDateValue()">{{l("Submit")}}</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group form-md-line-input form-md-floating-label row">
+                <label class="col-md-2 control-label">Phone</label>
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <div class="input-group-control">
+                            <p-inputMask [(ngModel)]="phoneValue" name="phoneValue" mask="(999) 999-9999" placeholder="(999) 999-9999" styleClass="form-control"></p-inputMask>
+                        </div>
+                        <span class="input-group-btn btn-right">
+                            <button class="btn green-haze" type="button" (click)="submiPhoneValue()">{{l("Submit")}}</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group form-md-line-input form-md-floating-label row">
+                <label class="col-md-2 control-label">Phone Ext</label>
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <div class="input-group-control">
+                            <p-inputMask mask="(999) 999-9999? x99999" name="phoneExtValue" [(ngModel)]="phoneExtValue" placeholder="(999) 999-9999? x99999" styleClass="form-control"></p-inputMask>
+                        </div>
+                        <span class="input-group-btn btn-right">
+                            <button class="btn green-haze" type="button" (click)="submitPhoneExtValue()">{{l("Submit")}}</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group form-md-line-input form-md-floating-label row">
+                <label class="col-md-2 control-label">Serial</label>
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <div class="input-group-control">
+                            <p-inputMask [(ngModel)]="serialValue" name="serialValue" mask="a*-999-a999" placeholder="a*-999-a999" styleClass="form-control"></p-inputMask>
+                        </div>
+                        <span class="input-group-btn btn-right">
+                            <button class="btn green-haze" type="button" (click)="submitSerialValue()">{{l("Submit")}}</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

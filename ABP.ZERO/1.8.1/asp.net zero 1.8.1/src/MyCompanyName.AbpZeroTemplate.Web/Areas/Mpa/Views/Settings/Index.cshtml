@@ -1,0 +1,223 @@
+﻿@using Abp.Extensions
+@using Abp.Web.Mvc.Extensions
+@using MyCompanyName.AbpZeroTemplate.Web.Navigation
+@model MyCompanyName.AbpZeroTemplate.Configuration.Tenants.Dto.TenantSettingsEditDto
+@{
+    ViewBag.CurrentPageName = PageNames.App.Tenant.Settings;
+}
+@section Scripts
+{
+    @Html.IncludeScript("~/Areas/Mpa/Views/Settings/Index.js")
+}
+<div class="row margin-bottom-5">
+    <div class="col-xs-6">
+        <div class="page-head">
+            <div class="page-title">
+                <h1>
+                    <span>@L("Settings")</span> <small>@L("SettingsHeaderInfo")</small>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 text-right">
+        <button id="SaveAllSettingsButton" class="btn btn-primary blue"><i class="fa fa-floppy-o"></i> @L("SaveAll")</button>
+    </div>
+</div>
+<div class="portlet light">
+    <div class="portlet-body">
+
+        <div id="SettingsTabPanel" class="tabbable-line">
+            <ul class="nav nav-tabs ">
+                @if (!ViewBag.IsMultiTenancyEnabled)
+                {
+                    <li class="active">
+                        <a href="#SettingsGeneralTab" data-toggle="tab" aria-expanded="true">
+                            @L("General")
+                        </a>
+                    </li>
+                }
+
+                <li class="@(ViewBag.IsMultiTenancyEnabled ? "active" : "")">
+                    <a href="#SettingsUserManagementTab" data-toggle="tab" aria-expanded="false">
+                        @L("UserManagement")
+                    </a>
+                </li>
+
+                @if (!ViewBag.IsMultiTenancyEnabled)
+                {
+                    <li class="">
+                        <a href="#SettingsEmailSmtpTab" data-toggle="tab" aria-expanded="false">
+                            @L("EmailSmtp")
+                        </a>
+                    </li>
+                }
+            </ul>
+
+            <div class="tab-content">
+
+                @if (!ViewBag.IsMultiTenancyEnabled)
+                {
+                    <div class="tab-pane active" id="SettingsGeneralTab">
+                        <form id="GeneralSettingsForm">
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                <input class="form-control@(Model.General.WebSiteRootAddress.IsNullOrEmpty() ? "" : " edited")" type="text" name="WebSiteRootAddress" value="@Model.General.WebSiteRootAddress" required maxlength="128">
+                                <label>@L("ThisWebSiteRootAddress")</label>
+                                <span class="help-block">@L("ThisWebSiteRootAddress_Hint")</span>
+                            </div>
+                        </form>
+                    </div>
+                }
+
+                <div class="tab-pane @(ViewBag.IsMultiTenancyEnabled ? "active" : "")" id="SettingsUserManagementTab">
+
+                    <form id="FormBasedRegistrationSettingsForm">
+                        <h4>@L("FormBasedRegistration")</h4>
+                        <div class="md-checkbox-list">
+                            <div class="md-checkbox">
+                                <input id="Setting_AllowSelfRegistration" class="md-check" type="checkbox" name="AllowSelfRegistration" value="true" @(Model.UserManagement.AllowSelfRegistration ? "checked=\"checked\"" : "")>
+                                <label for="Setting_AllowSelfRegistration">
+                                    <span class="inc"></span>
+                                    <span class="check"></span>
+                                    <span class="box"></span>
+                                    @L("AllowUsersToRegisterThemselves")
+                                </label>
+                                <span class="help-block">@L("AllowUsersToRegisterThemselves_Hint")</span>
+                            </div>
+                            <div class="md-checkbox" ng-show="vm.settings.userManagement.allowSelfRegistration">
+                                <input id="Setting_IsNewRegisteredUserActiveByDefault" class="md-check" type="checkbox" name="IsNewRegisteredUserActiveByDefault" value="true" @(Model.UserManagement.IsNewRegisteredUserActiveByDefault ? "checked=\"checked\"" : "")>
+                                <label for="Setting_IsNewRegisteredUserActiveByDefault">
+                                    <span class="inc"></span>
+                                    <span class="check"></span>
+                                    <span class="box"></span>
+                                    @L("NewRegisteredUsersIsActiveByDefault")
+                                </label>
+                                <span class="help-block">@L("NewRegisteredUsersIsActiveByDefault_Hint")</span>
+                            </div>
+                            <div class="md-checkbox" ng-show="vm.settings.userManagement.allowSelfRegistration">
+                                <input id="Setting_UseCaptchaOnRegistration" class="md-check" type="checkbox" name="UseCaptchaOnRegistration" value="true" @(Model.UserManagement.UseCaptchaOnRegistration ? "checked=\"checked\"" : "")>
+                                <label for="Setting_UseCaptchaOnRegistration">
+                                    <span class="inc"></span>
+                                    <span class="check"></span>
+                                    <span class="box"></span>
+                                    @L("UseCaptchaOnRegistration")
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+
+                    @if (!ViewBag.IsMultiTenancyEnabled && Model.Ldap.IsModuleEnabled)
+                    {
+                        <form id="LdapSettingsForm">
+                            <h4>@L("LdapSettings")</h4>
+                            <div class="md-checkbox-list">
+                                <div class="md-checkbox">
+                                    <input id="Setting_LdapIsEnabled" class="md-check" type="checkbox" name="IsEnabled" value="true" @(Model.Ldap.IsEnabled ? "checked=\"checked\"" : "")>
+                                    <label for="Setting_LdapIsEnabled">
+                                        <span class="inc"></span>
+                                        <span class="check"></span>
+                                        <span class="box"></span>
+                                        @L("EnableLdapAuthentication")
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                                <input type="text" name="Domain" class="form-control@(Model.Ldap.Domain.IsNullOrEmpty() ? "" : " edited")" value="@Model.Ldap.Domain" maxlength="128">
+                                <label>@L("DomainName")</label>
+                            </div>
+
+                            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                                <input type="text" name="UserName" class="form-control@(Model.Ldap.UserName.IsNullOrEmpty() ? "" : " edited")" value="@Model.Ldap.UserName" ng-model="vm.settings.ldap.userName" maxlength="128">
+                                <label>@L("UserName")</label>
+                            </div>
+
+                            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                                <input type="password" name="Password" class="form-control@(Model.Ldap.Password.IsNullOrEmpty() ? "" : " edited")" value="@Model.Ldap.Password" ng-model="vm.settings.ldap.password" maxlength="128">
+                                <label>@L("Password")</label>
+                            </div>
+                        </form>
+                    }
+
+                    <form id="OtherSettingsForm">
+                        <h4>@L("OtherSettings")</h4>
+                        <div class="md-checkbox-list">
+                            <div class="md-checkbox">
+                                <input id="Settings_IsEmailConfirmationRequiredForLogin" class="md-check" type="checkbox" name="IsEmailConfirmationRequiredForLogin" value="true" @(Model.UserManagement.IsEmailConfirmationRequiredForLogin ? "checked=\"checked\"" : "")>
+                                <label for="Settings_IsEmailConfirmationRequiredForLogin">
+                                    <span class="inc"></span>
+                                    <span class="check"></span>
+                                    <span class="box"></span>
+                                    @L("EmailConfirmationRequiredForLogin")
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                @if (!ViewBag.IsMultiTenancyEnabled)
+                {
+                    <div class="tab-pane" id="SettingsEmailSmtpTab">
+                        <form id="EmailSmtpSettingsForm">
+                            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                                <input type="email" name="DefaultFromAddress" class="form-control@(Model.Email.DefaultFromAddress.IsNullOrEmpty() ? "" : " edited")" value="@Model.Email.DefaultFromAddress" maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxEmailAddressLength">
+                                <label>@L("DefaultFromAddress")</label>
+                            </div>
+
+                            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                                <input type="text" name="DefaultFromDisplayName" class="form-control@(Model.Email.DefaultFromDisplayName.IsNullOrEmpty() ? "" : " edited")" value="@Model.Email.DefaultFromDisplayName" maxlength="128">
+                                <label>@L("DefaultFromDisplayName")</label>
+                            </div>
+
+                            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                                <input type="text" name="SmtpHost" class="form-control@(Model.Email.SmtpHost.IsNullOrEmpty() ? "" : " edited")" value="@Model.Email.SmtpHost" maxlength="64">
+                                <label>@L("SmtpHost")</label>
+                            </div>
+
+                            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                                <input type="number" name="SmtpPort" class="form-control edited" value="@Model.Email.SmtpPort" maxlength="5">
+                                <label>@L("SmtpPort")</label>
+                            </div>
+
+                            <div class="md-checkbox-list">
+                                <div class="md-checkbox">
+                                    <input id="Settings_SmtpEnableSsl" class="md-check" type="checkbox" name="SmtpEnableSsl" value="true" @Html.Raw(Model.Email.SmtpEnableSsl ? "checked=\"checked\"" : "")>
+                                    <label for="Settings_SmtpEnableSsl">
+                                        <span class="inc"></span>
+                                        <span class="check"></span>
+                                        <span class="box"></span>
+                                        @L("UseSsl")
+                                    </label>
+                                </div>
+                                <div class="md-checkbox">
+                                    <input id="Settings_SmtpUseDefaultCredentials" class="md-check" type="checkbox" name="SmtpUseDefaultCredentials" value="true" @Html.Raw(Model.Email.SmtpUseDefaultCredentials ? "checked=\"checked\"" : "")>
+                                    <label for="Settings_SmtpUseDefaultCredentials">
+                                        <span class="inc"></span>
+                                        <span class="check"></span>
+                                        <span class="box"></span>
+                                        @L("UseDefaultCredentials")
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                                <input type="text" name="SmtpDomain" class="form-control@(Model.Email.SmtpDomain.IsNullOrEmpty() ? "" : " edited")" value="@Model.Email.SmtpDomain" maxlength="128">
+                                <label>@L("DomainName")</label>
+                            </div>
+
+                            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                                <input type="text" name="SmtpUserName" class="form-control@(Model.Email.SmtpUserName.IsNullOrEmpty() ? "" : " edited")" value="@Model.Email.SmtpUserName" maxlength="128">
+                                <label>@L("UserName")</label>
+                            </div>
+
+                            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                                <input type="password" name="SmtpPassword" class="form-control@(Model.Email.SmtpPassword.IsNullOrEmpty() ? "" : " edited")" value="@Model.Email.SmtpPassword" maxlength="128">
+                                <label>@L("Password")</label>
+                            </div>
+                        </form>
+                    </div>
+                }
+
+            </div>
+        </div>
+
+    </div>
+</div>

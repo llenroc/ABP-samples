@@ -1,0 +1,22 @@
+﻿<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold uppercase">
+                {{l("OrganizationTree")}}
+            </span>
+        </div>
+        <div class="actions">
+            <a *ngIf="isGranted('Pages.Administration.OrganizationUnits.ManageOrganizationTree')" (click)="addUnit(null)" class="btn btn-circle btn-default">
+                <i class="fa fa-plus"></i> {{l("AddRootUnit")}}
+            </a>
+        </div>
+    </div>
+    <div class="portlet-body">
+        <div #tree></div>
+        <div *ngIf="!totalUnitCount" class="text-muted">
+            {{l("NoOrganizationUnitDefinedYet")}}
+        </div>
+    </div>
+</div>
+
+<createOrEditOrganizationUnitModal #createOrEditOrganizationUnitModal (unitCreated)="unitCreated($event)" (unitUpdated)="unitUpdated($event)"></createOrEditOrganizationUnitModal>

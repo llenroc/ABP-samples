@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Abp.Web.Api.OData</name>
+    </assembly>
+    <members>
+        <member name="T:Abp.WebApi.OData.Configuration.AbpWebApiODataConfigurationExtensions">
+            <summary>
+            Defines extension methods to <see cref="T:Abp.Configuration.Startup.IModuleConfigurations"/> to allow to configure Abp.Web.Api.OData module.
+            </summary>
+        </member>
+        <member name="M:Abp.WebApi.OData.Configuration.AbpWebApiODataConfigurationExtensions.AbpWebApiOData(Abp.Configuration.Startup.IModuleConfigurations)">
+            <summary>
+            Used to configure Abp.Web.Api.OData module.
+            </summary>
+        </member>
+        <member name="T:Abp.WebApi.OData.Configuration.IAbpWebApiODataModuleConfiguration">
+            <summary>
+            Used to configure Abp.Web.Api.OData module.
+            </summary>
+        </member>
+        <member name="P:Abp.WebApi.OData.Configuration.IAbpWebApiODataModuleConfiguration.ODataModelBuilder">
+            <summary>
+            Gets ODataConventionModelBuilder.
+            </summary>
+        </member>
+    </members>
+</doc>

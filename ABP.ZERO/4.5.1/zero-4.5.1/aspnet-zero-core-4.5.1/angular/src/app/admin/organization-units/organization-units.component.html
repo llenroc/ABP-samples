@@ -1,0 +1,22 @@
+﻿<div [@routerTransition]>
+    <div class="row margin-bottom-5">
+        <div class="col-xs-12">
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>
+                        <span>{{l("OrganizationUnits")}}</span> <small>{{l("OrganizationUnitsHeaderInfo")}}</small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <organization-tree #ouTree (ouSelected)="ouMembers.organizationUnit = $event"></organization-tree>
+        </div>
+        <div class="col-lg-6">
+            <organization-unit-members #ouMembers (membersAdded)="ouTree.membersAdded($event)" (memberRemoved)="ouTree.memberRemoved($event)"></organization-unit-members>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,145 @@
+﻿@using Abp.Application.Navigation
+@using Abp.Collections.Extensions
+@using Abp.Extensions
+@using YoYoCms.AbpProjectTemplate.Web.Views
+@model YoYoCms.AbpProjectTemplate.Web.Models.Layout.HeaderViewModel
+@helper ShowMenuItemRecursively(UserMenuItem menuItem, int currentLevel)
+{
+    <li class="@( menuItem.Name == Model.CurrentPageName ? "active" : "") @( menuItem.Items.IsNullOrEmpty() ? "" : (currentLevel == 0 ? "dropdown" : "dropdown-submenu"))">
+        @if (menuItem.Items.IsNullOrEmpty())
+        {
+            if (!menuItem.Url.IsNullOrEmpty())
+            {
+                <a href="@( UrlChecker.IsRooted(menuItem.Url) ? menuItem.Url : ApplicationPath + menuItem.Url)">@menuItem.DisplayName</a>
+            }
+            else
+            {
+                <a href="@ApplicationPath">@menuItem.DisplayName</a>
+            }
+        }
+        else
+        {
+            <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                @menuItem.DisplayName
+            </a>
+            <ul class="dropdown-menu">
+                @foreach (var childMenuItem in menuItem.Items)
+                {
+                    @ShowMenuItemRecursively(childMenuItem, currentLevel + 1)
+                }
+            </ul>
+        }
+    </li>
+}
+
+<header id="header" class="header-transparent header-fullwidth">
+
+    <div id="header-wrap">
+
+
+        <div class="container">
+            <!--Logo-->
+            <div id="logo">
+                <a href="/" class="logo" data-dark-logo="~/Common/Images/app-logo-on-dark.png">
+                    <img src="~/Common/Images/app-logo-on-light.png" alt="YoYoCMS Logo">
+                </a>
+            </div>
+            <!--End: Logo-->
+
+            <!--Header Extras-->
+            <div class="header-extras">
+                <ul>
+
+                    @*<li class="hidden-xs">
+                    <!--shopping cart-->
+                    <div id="shopping-cart">
+                        <a href="shop-cart.html">
+                            <span class="shopping-cart-items">8</span>
+
+                            <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <!--end: shopping cart-->
+                </li>*@
+
+                    @if (Model.Languages.Count > 1)
+                    {
+                        <li>
+                            <div id="LanguageDropDown" class="btn-group dropdown">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-delay="1000" data-close-others="true">
+                                    <i class="@Model.CurrentLanguage.Icon"></i> @Model.CurrentLanguage.DisplayName <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    @foreach (var language in Model.Languages)
+                                    {
+                                        if (Model.CurrentLanguage.Name == language.Name)
+                                        {
+                                            continue;
+                                        }
+
+                                        <li class="language-menu-item">
+                                            <a href="@Url.Action("ChangeCulture", "AbpLocalization")?cultureName=@(language.Name)&returnUrl=@Request.Path">
+                                                <i class="@language.Icon"></i> <span>@language.DisplayName</span>
+                                            </a>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </li>
+                    }
+                    @if (Model.LoginInformations == null && Model.IsMultiTenancyEnabled && Model.TenantRegistrationEnabled)
+                    {
+                        <li>
+                            <a href="@Url.Action("Index", "TenantRegistration")">@L("NewTenant")</a>
+                        </li>
+                    }
+                    <li>
+                        @if (Model.LoginInformations != null)
+                        {
+                            <a href="@Url.Action("dashboard", "view")">@Model.GetShownLoginName() (@L("GoToApplication"))</a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Vue", "Application")">@L("LogIn")</a>
+                        }
+                    </li>
+                    <li>
+                        @*<div class="topbar-dropdown">
+                        <a class="title"><i class="fa fa-globe"></i></a>
+                        <div class="dropdown-list">
+                            <a class="list-entry" href="#">French</a>
+                            <a class="list-entry" href="#">Spanish</a>
+                        </div>
+                    </div>*@
+                    </li>
+                </ul>
+            </div>
+            <!--end: Header Extras-->
+
+            <!--Navigation Resposnive Trigger-->
+            <div id="mainMenu-trigger">
+                <button class="lines-button x">
+                    <span class="lines"></span>
+                </button>
+            </div>
+            <!--end: Navigation Resposnive Trigger-->
+
+            <!--Navigation-->
+            <div id="mainMenu" class="light">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            @foreach (var menuItem in Model.Menu.Items)
+                            {
+                                @ShowMenuItemRecursively(menuItem, 0)
+                            }
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+            <!--end: Navigation-->
+
+
+        </div>
+    </div>
+</header>

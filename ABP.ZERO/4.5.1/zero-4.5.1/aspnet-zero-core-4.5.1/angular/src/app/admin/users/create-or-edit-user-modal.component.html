@@ -1,0 +1,193 @@
+<div bsModal #createOrEditModal="bs-modal" (onShown)="onShown()" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="createOrEditModal" aria-hidden="true" [config]="{backdrop: 'static'}">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <form *ngIf="active" #userForm="ngForm" novalidate (ngSubmit)="save()" autocomplete="off">
+
+        <div class="modal-header">
+          <button type="button" class="close" (click)="close()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">
+            <span *ngIf="user.id">{{l("EditUser")}}: {{user.userName}}</span>
+            <span *ngIf="!user.id">{{l("CreateNewUser")}}</span>
+          </h4>
+        </div>
+
+        <div class="modal-body">
+          <tabset class="tab-container tabbable-line">
+            <tab heading="{{l('UserInformations')}}">
+
+              <div class="row">
+                <div class="col-sm-4 text-center">
+                  <img src="{{profilePicture}}" width="128" height="128" class="img-thumbnail img-rounded user-edit-dialog-profile-image" />
+                </div>
+                <div class="col-sm-8">
+                  <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                    <input #nameInput class="form-control" type="text" name="Name" [ngClass]="{'edited':user.name}" [(ngModel)]="user.name" required maxlength="32">
+                    <label>{{l("Name")}}</label>
+                  </div>
+
+                  <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                    <input type="text" name="Surname" class="form-control" [ngClass]="{'edited':user.surname}" [(ngModel)]="user.surname" required maxlength="32">
+                    <label>{{l("Surname")}}</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="email" name="EmailAddress" class="form-control" [ngClass]="{'edited':user.emailAddress}" [(ngModel)]="user.emailAddress" required maxlength="256" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,})+$">
+                <label>{{l("EmailAddress")}}</label>
+              </div>
+
+              <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input type="text" name="PhoneNumber" class="form-control" [ngClass]="{'edited':user.phoneNumber}" [(ngModel)]="user.phoneNumber" maxlength="24">
+                <label>{{l("PhoneNumber")}}</label>
+              </div>
+
+              <div class="form-group form-md-line-input form-md-floating-label">
+                <input type="text" [disabled]="!canChangeUserName" [ngClass]="{'edited':user.userName}" name="UserName" class="form-control input-ltr" [(ngModel)]="user.userName" required maxlength="32">
+                <label>{{l("UserName")}}</label>
+                <span class="help-block" *ngIf="!canChangeUserName">{{l("CanNotChangeAdminUserName")}}</span>
+              </div>
+
+              <div class="md-checkbox-list">
+                <div class="md-checkbox">
+                  <input id="EditUser_SetRandomPassword" class="md-check" type="checkbox" name="SetRandomPassword" [(ngModel)]="setRandomPassword">
+                  <label for="EditUser_SetRandomPassword">
+                    <span class="inc"></span>
+                    <span class="check"></span>
+                    <span class="box"></span>
+                    {{l("SetRandomPassword")}}
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group form-md-line-input form-md-floating-label no-hint" [hidden]="setRandomPassword">
+                <div class="input-icon right">
+                  <input type="password" name="Password" #Password="ngModel" id="Password" class="form-control" [ngClass]="{'edited':user.password}" [(ngModel)]="user.password" [required]="!user.id && !setRandomPassword" maxlength="32"
+                         [requireDigit]="passwordComplexitySetting.requireDigit" [requireLowercase]="passwordComplexitySetting.requireLowercase"
+                         [requireUppercase]="passwordComplexitySetting.requireUppercase" [requireNonAlphanumeric]="passwordComplexitySetting.requireNonAlphanumeric" [requiredLength]="passwordComplexitySetting.requiredLength"
+                         validateEqual="PasswordRepeat" reverse="true">
+                  <label>{{l("Password")}}</label>
+                </div>
+              </div>
+              
+              <div [hidden]="setRandomPassword || userForm.form.valid || userForm.form.pristine">
+                <ul class="help-block text-danger" *ngIf="userForm.controls['Password'] && userForm.controls['Password'].errors">
+                  <li [hidden]="!userForm.controls['Password'].errors.requireDigit">{{l("PasswordComplexity_RequireDigit_Hint")}}</li>
+                  <li [hidden]="!userForm.controls['Password'].errors.requireLowercase">{{l("PasswordComplexity_RequireLowercase_Hint")}}</li>
+                  <li [hidden]="!userForm.controls['Password'].errors.requireUppercase">{{l("PasswordComplexity_RequireUppercase_Hint")}}</li>
+                  <li [hidden]="!userForm.controls['Password'].errors.requireNonAlphanumeric">{{l("PasswordComplexity_RequireNonAlphanumeric_Hint")}}</li>
+                  <li [hidden]="!userForm.controls['Password'].errors.requiredLength">{{l("PasswordComplexity_RequiredLength_Hint", passwordComplexitySetting.requiredLength)}}</li>
+                </ul>
+              </div>
+
+              <div class="form-group form-md-line-input form-md-floating-label no-hint" *ngIf="!setRandomPassword">
+                <div class="input-icon right">
+                  <input type="password" name="PasswordRepeat" #PasswordRepeat="ngModel" class="form-control" [ngClass]="{'edited':user.passwordRepeat}" [(ngModel)]="user.passwordRepeat" [required]="!user.id && !setRandomPassword" maxlength="32"
+                         [requireDigit]="passwordComplexitySetting.requireDigit" [requireLowercase]="passwordComplexitySetting.requireLowercase"
+                         [requireUppercase]="passwordComplexitySetting.requireUppercase" [requireNonAlphanumeric]="passwordComplexitySetting.requireNonAlphanumeric" [requiredLength]="passwordComplexitySetting.requiredLength"
+                         validateEqual="Password" reverse="false">
+                  <label>{{l("PasswordRepeat")}}</label>
+                </div>
+              </div>
+              
+              <div [hidden]="setRandomPassword || userForm.form.valid || userForm.form.pristine">
+                <ul class="help-block text-danger" *ngIf="userForm.controls['PasswordRepeat'] && userForm.controls['PasswordRepeat'].errors">
+                  <li [hidden]="!userForm.controls['PasswordRepeat'].errors.requireDigit">{{l("PasswordComplexity_RequireDigit_Hint")}}</li>
+                  <li [hidden]="!userForm.controls['PasswordRepeat'].errors.requireLowercase">{{l("PasswordComplexity_RequireLowercase_Hint")}}</li>
+                  <li [hidden]="!userForm.controls['PasswordRepeat'].errors.requireUppercase">{{l("PasswordComplexity_RequireUppercase_Hint")}}</li>
+                  <li [hidden]="!userForm.controls['PasswordRepeat'].errors.requireNonAlphanumeric">{{l("PasswordComplexity_RequireNonAlphanumeric_Hint")}}</li>
+                  <li [hidden]="!userForm.controls['PasswordRepeat'].errors.requiredLength">{{l("PasswordComplexity_RequiredLength_Hint", passwordComplexitySetting.requiredLength)}}</li>
+                </ul>
+              </div>
+
+              <div class="md-checkbox-list">
+                <div class="md-checkbox">
+                  <input id="EditUser_ShouldChangePasswordOnNextLogin" class="md-check" type="checkbox" name="ShouldChangePasswordOnNextLogin" [(ngModel)]="user.shouldChangePasswordOnNextLogin">
+                  <label for="EditUser_ShouldChangePasswordOnNextLogin">
+                    <span class="inc"></span>
+                    <span class="check"></span>
+                    <span class="box"></span>
+                    {{l("ShouldChangePasswordOnNextLogin")}}
+                  </label>
+                </div>
+                <div class="md-checkbox">
+                  <input id="EditUser_SendActivationEmail" class="md-check" type="checkbox" name="SendActivationEmail" [(ngModel)]="sendActivationEmail">
+                  <label for="EditUser_SendActivationEmail">
+                    <span class="inc"></span>
+                    <span class="check"></span>
+                    <span class="box"></span>
+                    {{l("SendActivationEmail")}}
+                  </label>
+                </div>
+                <div class="md-checkbox">
+                  <input id="EditUser_IsActive" class="md-check" type="checkbox" name="IsActive" [(ngModel)]="user.isActive">
+                  <label for="EditUser_IsActive">
+                    <span class="inc"></span>
+                    <span class="check"></span>
+                    <span class="box"></span>
+                    {{l("Active")}}
+                  </label>
+                </div>
+                <div class="md-checkbox" *ngIf="isTwoFactorEnabled">
+                  <input id="EditUser_IsTwoFactorEnabled" class="md-check" type="checkbox" name="IsTwoFactorEnabled" [(ngModel)]="user.isTwoFactorEnabled">
+                  <label for="EditUser_IsTwoFactorEnabled">
+                    <span class="inc"></span>
+                    <span class="check"></span>
+                    <span class="box"></span>
+                    {{l("IsTwoFactorEnabled")}}
+                  </label>
+                </div>
+                <div class="md-checkbox" *ngIf="isLockoutEnabled">
+                  <input id="EditUser_IsLockoutEnabled" class="md-check" type="checkbox" name="IsLockoutEnabled" [(ngModel)]="user.isLockoutEnabled">
+                  <label for="EditUser_IsLockoutEnabled" tooltip="{{l('IsLockoutEnabled_Hint')}}">
+                    <span class="inc"></span>
+                    <span class="check"></span>
+                    <span class="box"></span>
+                    {{l("IsLockoutEnabled")}}
+                  </label>
+                </div>
+              </div>
+
+            </tab>
+              <tab>
+                  <ng-template tabHeading>
+                      {{l('Roles')}} <b class="badge badge-primary">{{getAssignedRoleCount()}}</b>
+                  </ng-template>
+
+                  <div class="md-checkbox-list">
+                      <div class="md-checkbox" *ngFor="let role of roles">
+                          <input id="EditUser_{{role.roleName}}" class="md-check" type="checkbox" name="{{role.roleName}}" [(ngModel)]="role.isAssigned">
+                          <label attr.for="EditUser_{{role.roleName}}">
+                              <span class="inc"></span>
+                              <span class="check"></span>
+                              <span class="box"></span>
+                              {{role.roleDisplayName}}
+                          </label>
+                      </div>
+                  </div>
+
+              </tab>
+              <tab>
+                  <ng-template tabHeading>
+                      {{l('OrganizationUnits')}}
+                  </ng-template>
+                  
+                  <organization-unit-tree #organizationUnitTree></organization-unit-tree>
+              </tab>
+          </tabset>
+        </div>
+
+        <div class="modal-footer">
+          <button [disabled]="saving" type="button" class="btn btn-default" (click)="close()">{{l("Cancel")}}</button>
+          <button type="submit" class="btn btn-primary blue" [disabled]="!userForm.form.valid" [buttonBusy]="saving" [busyText]="l('SavingWithThreeDot')"><i class="fa fa-save"></i> <span>{{l("Save")}}</span></button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>

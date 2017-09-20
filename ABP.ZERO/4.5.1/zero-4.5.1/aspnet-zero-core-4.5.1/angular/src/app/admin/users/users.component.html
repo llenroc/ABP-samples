@@ -1,0 +1,169 @@
+﻿<div [@routerTransition]>
+    <div class="row margin-bottom-5">
+        <div class="col-xs-6">
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>
+                        <span>{{l("Users")}}</span> <small>{{l("UsersHeaderInfo")}}</small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 text-right">
+            <button (click)="exportToExcel()" class="btn green-haze"><i class="fa fa-file-excel-o"></i> {{l("ExportToExcel")}}</button>
+            <button (click)="createUser()" *ngIf="isGranted('Pages.Administration.Users.Create')" class="btn btn-primary blue"><i class="fa fa-plus"></i> {{l("CreateNewUser")}}</button>
+        </div>
+    </div>
+
+    <div class="portlet light margin-bottom-0">
+        <div class="portlet-body">
+            <div class="form">
+                <form class="horizontal-form" autocomplete="off">
+                    <div class="form-body">
+                        <div class="row margin-bottom-10">
+                            <div class="col-md-12">
+                                <div class="inputs inputs-full-width">
+                                    <div class="portlet-input">
+                                        <div class="input-group">
+                                            <input [(ngModel)]="filterText" name="filterText" autoFocus class="form-control" [placeholder]="l('SearchWithThreeDot')" type="text">
+                                            <span class="input-group-btn">
+                                                <button (click)="getUsers()" class="btn default" type="submit"><i class="icon-magnifier"></i></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-10" [hidden]="!advancedFiltersAreShown">
+                            <div [ngClass]="{'col-md-6': isGranted('Pages.Administration.Roles'), 'col-md-12':!isGranted('Pages.Administration.Roles')}">
+                                <div class="form-group">
+                                    <permission-combo [(selectedPermission)]="selectedPermission"></permission-combo>
+                                </div>
+                            </div>
+                            <div class="col-md-6" *ngIf="isGranted('Pages.Administration.Roles')">
+                                <div class="form-group">
+                                    <role-combo [(selectedRole)]="role" emptyText="{{l('FilterByRole')}}"></role-combo>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-10" *ngIf="advancedFiltersAreShown">
+                        <div class="col-sm-12 text-right">
+                            <button class="btn blue" (click)="getUsers()"><i class="fa fa-refresh"></i> {{l("Refresh")}}</button>
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-10">
+                        <div class="col-sm-12">
+                            <span class="clickable-item text-muted" *ngIf="!advancedFiltersAreShown" (click)="advancedFiltersAreShown=!advancedFiltersAreShown"><i class="fa fa-angle-down"></i> {{l("ShowAdvancedFilters")}}</span>
+                            <span class="clickable-item text-muted" *ngIf="advancedFiltersAreShown" (click)="advancedFiltersAreShown=!advancedFiltersAreShown"><i class="fa fa-angle-up"></i> {{l("HideAdvancedFilters")}}</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!--<Primeng-Datatable-Start>-->
+            <div class="primeng-datatable-container" 
+                 [busyIf]="primengDatatableHelper.isLoading">
+                <p-dataTable #dataTable
+                             (onLazyLoad)="getUsers($event)"
+                             [value]="primengDatatableHelper.records"
+                             rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                             [paginator]="false"
+                             [lazy]="true"
+                             emptyMessage="{{l('NoData')}}"
+                             scrollable="true" 
+                             ScrollWidth="100%" 
+                             responsive="primengDatatableHelper.isResponsive"
+                             resizableColumns="primengDatatableHelper.resizableColumns">
+                  
+                    <p-column field=""
+                              header="{{l('Actions')}}"
+                              [sortable]="false"
+                              [style]="{'width':'75px'}"
+                              [hidden]="!isGrantedAny('Pages.Administration.Users.Impersonation', 'Pages.Administration.Users.Edit', 'Pages.Administration.Users.ChangePermissions', 'Pages.Administration.Users.Delete')">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <div class="btn-group dropdown" normalizePosition>
+                                <button class="dropdown-toggle btn btn-xs btn-primary blue"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false">
+                                    <i class="fa fa-cog"></i><span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a *ngIf="permission.isGranted('Pages.Administration.Users.Impersonation') && record.id !== appSession.userId"
+                                           (click)="_impersonationService.impersonate(record.id, appSession.tenantId)">{{l('LoginAsThisUser')}}</a>
+                                    </li>
+                                    <li>
+                                        <a *ngIf="permission.isGranted('Pages.Administration.Users.Edit')"
+                                           (click)="createOrEditUserModal.show(record.id)">{{l('Edit')}}</a>
+                                    </li>
+                                    <li>
+                                        <a *ngIf="permission.isGranted('Pages.Administration.Users.ChangePermissions')"
+                                           (click)="editUserPermissionsModal.show(record.id, record.userName)">{{l('Permissions')}}</a>
+                                    </li>
+                                    <li>
+                                        <a *ngIf="permission.isGranted('Pages.Administration.Users.ChangePermissions')"
+                                           (click)="unlockUser(record)">{{l('Unlock')}}</a>
+                                    </li>
+                                    <li>
+                                        <a *ngIf="permission.isGranted('Pages.Administration.Users.Delete')"
+                                           (click)="deleteUser(record)">{{l('Delete')}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ng-template>
+                    </p-column>
+                    <p-column field="userName" header="{{l('UserName')}}" [sortable]="true" [style]="{'width':'150px'}"></p-column>
+                    <p-column field="name" header="{{l('Name')}}" [sortable]="true" [style]="{'width':'150px'}"></p-column>
+                    <p-column field="surname" header="{{l('Surname')}}" [sortable]="true" [style]="{'width':'150px'}"></p-column>
+                    <p-column field="roles" header="{{l('Roles')}}" [sortable]="false" [style]="{'width':'150px'}">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            {{getRolesAsString(record.roles)}}
+                        </ng-template>
+                    </p-column>
+                    <p-column field="emailAddress" header="{{l('EmailAddress')}}" [sortable]="true" [style]="{'width':'250px'}"></p-column>
+                    <p-column field="isEmailConfirmed" header="{{l('EmailConfirm')}}" [sortable]="true" [style]="{'width':'200px'}">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <span class="label label-success" *ngIf="record.isEmailConfirmed">{{l('Yes')}}</span>
+                            <span class="label label-default" *ngIf="!record.isEmailConfirmed">{{l('No')}}</span>
+                        </ng-template>
+                    </p-column>
+                    <p-column field="isActive" header="{{l('Active')}}" [sortable]="true" [style]="{'width':'100px'}">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <span class="label label-success" *ngIf="record.isActive">{{l('Yes')}}</span>
+                            <span class="label label-default" *ngIf="!record.isActive">{{l('No')}}</span>
+                        </ng-template>
+                    </p-column>
+                    <p-column field="lastLoginTime" header="{{l('LastLoginTime')}}" [sortable]="true" [style]="{'width':'150px'}">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <span *ngIf="record.lastLoginTime">{{record.lastLoginTime | momentFormat:'L'}}</span>
+                            <span *ngIf="!record.lastLoginTime">-</span>
+                        </ng-template>
+                    </p-column>
+                    <p-column field="creationTime" header="{{l('CreationTime')}}" [sortable]="true" [style]="{'width':'200px'}">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            {{record.creationTime | momentFormat:'L'}}
+                        </ng-template>
+                    </p-column>
+                </p-dataTable>
+                <div class="primeng-paging-container">
+                    <p-paginator rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                                 #paginator
+                                 (onPageChange)="getUsers($event)"
+                                 [totalRecords]="primengDatatableHelper.totalRecordsCount"
+                                 [rowsPerPageOptions]="primengDatatableHelper.predefinedRecordsCountPerPage">
+                    </p-paginator>
+                    <span class="total-records-count">
+                        {{l('TotalRecordsCount', primengDatatableHelper.totalRecordsCount)}}
+                    </span>
+                </div>
+            </div>
+            <!--<Primeng-Datatable-End>-->
+        </div>
+    </div>
+
+    <createOrEditUserModal #createOrEditUserModal (modalSave)="getUsers()"></createOrEditUserModal>
+
+    <editUserPermissionsModal #editUserPermissionsModal></editUserPermissionsModal>
+</div>

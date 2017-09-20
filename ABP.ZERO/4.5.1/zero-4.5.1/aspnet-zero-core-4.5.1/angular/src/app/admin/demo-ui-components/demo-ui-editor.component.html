@@ -1,0 +1,26 @@
+﻿<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject">Editor</span>
+        </div>
+    </div>
+    <div class="portlet-body">
+        <form role="form">
+
+            <div class="form-group form-md-line-input form-md-floating-label row">
+                <label class="col-md-2 control-label">Html editor</label>
+                <div class="col-md-10">
+                    <p-editor [(ngModel)]="htmlEditorInput" name="HtmlEditorInput" [style]="{'height':'300px'}"></p-editor>
+                </div>
+            </div>
+            
+            <div class="form-group form-md-line-input row">
+                <div class="col-md-offset-2 col-md-10">
+                    <button class="btn green-haze" (click)="submitValue()" type="button">{{l("Submit")}}</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>

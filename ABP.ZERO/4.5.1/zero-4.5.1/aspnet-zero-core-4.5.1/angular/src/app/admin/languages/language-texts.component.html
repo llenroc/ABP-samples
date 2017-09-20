@@ -1,0 +1,150 @@
+﻿<div [@routerTransition]>
+    <div class="row margin-bottom-5">
+        <div class="col-xs-6">
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>
+                        <span>{{l("LanguageTexts")}}</span> <small>{{l("LanguageTextsHeaderInfo")}}</small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 text-right">
+
+        </div>
+    </div>
+
+    <div class="portlet light margin-bottom-0">
+        <div class="portlet-title portlet-title-filter">
+            <div class="inputs inputs-full-width">
+                <div class="portlet-input">
+                    <form autocomplete="off">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group">
+                                    <label for="TextBaseLanguageSelectionCombobox">{{l("BaseLanguage")}}</label>
+                                    <select #baseLanguageNameCombobox
+                                            name="baseLanguageName"
+                                            class="form-control bs-select"
+                                            [(ngModel)]="baseLanguageName"
+                                            [attr.data-live-search]="true"
+                                            jq-plugin="selectpicker"
+                                            jq-options='{ "iconBase": "famfamfam-flag", "tickIcon": "fa fa-check" }'>
+                                        <option *ngFor="let language of languages" [value]="language.name" [attr.data-icon]="language.icon">{{language.displayName}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group">
+                                    <label for="TextTargetLanguageSelectionCombobox">{{l("TargetLanguage")}}</label>
+                                    <select #targetLanguageNameCombobox
+                                            name="targetLanguageName"
+                                            class="form-control bs-select"
+                                            [(ngModel)]="targetLanguageName"
+                                            [attr.data-live-search]="true"
+                                            jq-plugin="selectpicker"
+                                            jq-options='{ "iconBase": "famfamfam-flag", "tickIcon": "fa fa-check" }'>
+                                        <option *ngFor="let language of languages" [value]="language.name" [attr.data-icon]="language.icon">{{language.displayName}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group">
+                                    <label for="TextSourceSelectionCombobox">{{l("Source")}}</label>
+                                    <select #sourceNameCombobox
+                                            name="sourceName"
+                                            class="form-control bs-select"
+                                            [(ngModel)]="sourceName"
+                                            [attr.data-live-search]="true"
+                                            jq-plugin="selectpicker">
+                                        <option *ngFor="let sourceName of sourceNames" [value]="sourceName">{{sourceName}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group">
+                                    <label for="TargetValueFilterSelectionCombobox">{{l("TargetValue")}}</label>
+                                    <select #targetValueFilterCombobox
+                                            name="targetValueFilter"
+                                            class="form-control bs-select"
+                                            [(ngModel)]="targetValueFilter"
+                                            jq-plugin="selectpicker">
+                                        <option value="ALL">{{l("All")}}</option>
+                                        <option value="EMPTY">{{l("EmptyOnes")}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input [(ngModel)]="filterText" name="filterText" autoFocus class="form-control" placeholder="{{l('SearchWithThreeDot')}}" type="text">
+                            <span class="input-group-btn">
+                                <button (click)="applyFilters()" class="btn default" type="submit"><i class="icon-refresh"></i> {{l("Refresh")}}</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="portlet-body">
+
+            <!--<Primeng-Datatable-Start>-->
+            <div class="primeng-datatable-container"
+                 [busyIf]="primengDatatableHelper.isLoading">
+                <p-dataTable #dataTable
+                             (onLazyLoad)="getLanguageTexts($event)"
+                             [value]="primengDatatableHelper.records"
+                             rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                             [paginator]="false"
+                             [lazy]="true"
+                             emptyMessage="{{l('NoData')}}"
+                             [responsive]="primengDatatableHelper.isResponsive">
+
+
+                    <p-column field="key" header="{{l('Key')}}" [sortable]="true">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <span title="{{record.key}}">{{truncateString(record.key)}}</span>
+                        </ng-template>
+                    </p-column>
+
+                    <p-column field="baseValue" header="{{l('BaseValue')}}" [sortable]="true">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <span title="{{record.baseValue}}">{{truncateString(record.baseValue)}}</span>
+                        </ng-template>
+                    </p-column>
+
+                    <p-column field="targetValue" header="{{l('TargetValue')}}" [sortable]="true">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <span title="{{record.targetValue}}">{{truncateString(record.targetValue) }}</span>
+                        </ng-template>
+                    </p-column>
+
+                    <p-column field="" header="{{l('Edit')}}" [sortable]="false" styleClass="width-percent-10">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <button class="btn btn-default btn-xs"
+                                    (click)="editTextModal.show(baseLanguageName,targetLanguageName,sourceName,record.key,record.baseValue,record.targetValue)"
+                                    title="{{l('Edit')}}">
+                                <i class="fa fa-edit"></i>
+                            </button>
+                        </ng-template>
+                    </p-column>
+
+                </p-dataTable>
+                <div class="primeng-paging-container">
+                    <p-paginator rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                                 #paginator
+                                 (onPageChange)="getLanguageTexts($event)"
+                                 [totalRecords]="primengDatatableHelper.totalRecordsCount"
+                                 [rowsPerPageOptions]="primengDatatableHelper.predefinedRecordsCountPerPage">
+                    </p-paginator>
+                    <span class="total-records-count">
+                        {{l('TotalRecordsCount', primengDatatableHelper.totalRecordsCount)}}
+                    </span>
+                </div>
+            </div>
+            <!--<Primeng-Datatable-End>-->
+
+        </div>
+    </div>
+
+    <editTextModal #editTextModal (modalSave)="refreshTextValueFromModal()"></editTextModal>
+</div>

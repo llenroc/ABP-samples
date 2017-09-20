@@ -1,0 +1,133 @@
+﻿<!-- BEGIN QUICK SIDEBAR -->
+<div class="page-quick-sidebar-wrapper" data-close-on-body-click="false">
+    <a class="page-quick-sidebar-pinner" (click)="reversePinned()">
+        <i class="icon-pin" [ngClass]="{'pinned':pinned, 'unpinned':!pinned}"></i>
+    </a>
+    <a class="page-quick-sidebar-toggler">
+        <i class="icon-close"></i>
+    </a>
+    <div class="page-quick-sidebar">
+        <div class="tab-content">
+            <div class="tab-pane active page-quick-sidebar-chat" id="quick_sidebar_tab_1">
+                <div class="page-quick-sidebar-chat-users" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list">
+                    <div class="row">
+                        <div class="col-md-12" style="padding-top: 30px; margin: 5px; padding-right: 25px;">
+                            <div class="input-icon input-icon-sm right">
+                                <i *ngIf="tenantToTenantChatAllowed || tenantToHostChatAllowed" class="fa fa-question-circle" jq-plugin="popover" data-placement="bottom" data-html="true" title="{{l('ChatUserSearch_Hint')}}"></i>
+                                <input type="text" class="form-control input-sm" placeholder="{{l('FilterOrAddUser')}}" [(ngModel)]="userNameFilter">
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="margin: 5px; padding-right: 25px;">
+                            <button *ngIf="userNameFilter.length" (click)="search()" type="button" class="btn btn-block btn-success">{{l("AddFriend")}}</button>
+                        </div>
+                    </div>
+                    <div class="panel-group accordion" id="accFriendUsers">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle accordion-toggle-styled" data-toggle="collapse" data-parent="#accFriendUsers" data-target="#accFriendUsers_content">{{l("Friends")}}</a>
+                                </h4>
+                            </div>
+                            <div id="accFriendUsers_content" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul class="media-list list-items" *ngFor="let friend of getFilteredFriends(friendDtoState.Accepted, userNameFilter)">
+                                        <chat-friend-list-item [friend]="friend" (selectChatFriend)="selectFriend(friend)"></chat-friend-list-item>
+                                    </ul>
+                                    <p *ngIf="getFilteredFriendsCount(friendDtoState.Accepted) == 0">{{l("YouDontHaveAnyFriend")}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group accordion" id="accBannedUsers">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accBannedUsers" data-target="#accBannedUsers_content"> {{l("BlockedUsers")}} </a>
+                                </h4>
+                            </div>
+                            <div id="accBannedUsers_content" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="media-list list-items" *ngFor="let friend of getFilteredFriends(friendDtoState.Blocked, userNameFilter)">
+                                        <chat-friend-list-item [friend]="friend" (selectChatFriend)="selectFriend(friend)"></chat-friend-list-item>
+                                    </ul>
+                                    <p *ngIf="getFilteredFriendsCount(friendDtoState.Blocked) == 0">{{l("YouDontHaveAnyBlockedFriend")}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-quick-sidebar-item">
+                    <div class="page-quick-sidebar-chat-user">
+                        <div class="page-quick-sidebar-nav">
+                            <a class="page-quick-sidebar-back-to-list">
+                                <i class="icon-arrow-left"></i>{{l("Back")}}
+                            </a>
+                        </div>
+                        <div class="selected-chat-user">
+                            <div class="selected-chat-user-image">
+                                <friend-profile-picture [profilePictureId]="selectedUser.friendProfilePictureId" [userId]="selectedUser.friendUserId" [tenantId]="selectedUser.friendTenantId"></friend-profile-picture>
+                                <span class="contact-status" [ngClass]="{'online': selectedUser.isOnline, 'offline':!selectedUser.isOnline}"></span>
+                            </div>
+                            <h5>{{getShownUserName(selectedUser.friendTenancyName,selectedUser.friendUserName)}}</h5>
+                            <div class="actions">
+                                <div class="btn-group">
+                                    <a class="btn green btn-circle btn-sm"  data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                                        <i class="icon-wrench"></i>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li *ngIf="selectedUser.state !== friendDtoState.Blocked">
+                                            <a  (click)="block(selectedUser)">
+                                                <i class="fa fa-ban"></i>
+                                                {{l("BlockUser")}}
+                                            </a>
+                                        </li>
+                                        <li *ngIf="selectedUser.state === friendDtoState.Blocked">
+                                            <a  (click)="unblock(selectedUser)">
+                                                <i class="fa fa-check"></i>
+                                                {{l("UnblockUser")}}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-quick-sidebar-chat-user-messages">
+                            <div *ngFor="let message of selectedUser.messages">
+                                <div class="post" [ngClass]="{'out':message.side === 1, 'in':message.side !== 1}">
+                                    <img class="avatar" alt="" *ngIf="message.side === 1" src="{{profilePicture}}" />
+                                    <friend-profile-picture *ngIf="message.side !== 1" [cssClass]="'avatar'" [profilePictureId]="selectedUser.friendProfilePictureId" [userId]="selectedUser.friendUserId" [tenantId]="selectedUser.friendTenantId"></friend-profile-picture>
+                                    <div class="message">
+                                        <span class="arrow"></span>
+                                        <a  class="name">{{getUserNameByChatSide(message.side)}}</a>
+                                        <span class="datetime">
+                                            <time jq-plugin="timeago" [attr.datetime]="getFixedMessageTime(message.creationTime)"></time>
+                                        </span>
+                                        <span class="body"> {{message.message}} </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-quick-sidebar-chat-user-form">
+                            <form #chatMessageForm="ngForm" name="chatMessageForm" (ngSubmit)="sendMessage()">
+                                <div class="col-md-12" style="margin: 5px; padding-right: 25px;" *ngIf="selectedUser.state === friendDtoState.Blocked">
+                                    <button (click)="unblock(selectedUser)" type="button" class="btn btn-block btn-success">{{l("UnblockUser")}}</button>
+                                </div>
+                                <div class="input-group" *ngIf="selectedUser.state !== friendDtoState.Blocked">
+                                    <textarea id="ChatMessage" name="ChatMessage" type="text" class="form-control" rows="3" placeholder="{{l('TypeAMessageHere')}}" [(ngModel)]="chatMessage" (keydown.Enter)="sendMessage()" [disabled]="selectedUser.state == friendDtoState.Blocked" maxlength="4096" required></textarea>
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="btn green send-chat-message" [disabled]="selectedUser.state == friendDtoState.Blocked || chatMessageForm.$invalid || sendingMessage">
+                                            <i class="icon-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END QUICK SIDEBAR -->
+<commonLookupModal #userLookupModal (itemSelected)="addFriendSelected($event)"></commonLookupModal>

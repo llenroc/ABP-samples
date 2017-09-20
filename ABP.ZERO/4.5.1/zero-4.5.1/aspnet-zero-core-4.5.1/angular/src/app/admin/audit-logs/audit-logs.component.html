@@ -1,0 +1,171 @@
+﻿<div [@routerTransition]>
+    <div class="row margin-bottom-5">
+        <div class="col-xs-6">
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>
+                        <span>{{l("AuditLogs")}}</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 text-right">
+        </div>
+    </div>
+    <div class="portlet light margin-bottom-0">
+        <div class="portlet-title portlet-title-filter">
+            <div class="inputs inputs-full-width">
+                <div class="portlet-input">
+                    <form class="horizontal-form" #auditFilterForm="ngForm" (ngSubmit)="getAuditLogs()">
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">{{l("DateRange")}}</label>
+                                        <date-range-picker [(startDate)]="startDate" [(endDate)]="endDate"></date-range-picker>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">{{l("UserName")}}</label>
+                                        <input type="text" name="UserName" class="form-control" [(ngModel)]="username">
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngIf="advancedFiltersAreShown">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">{{l("Service")}}</label>
+                                            <input name="ServiceName" type="text" class="form-control" [(ngModel)]="serviceName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label" style="display: block">{{l("Duration")}}</label>
+                                        <div class="input-group" style="width: 250px !important;">
+                                            <input type="number" name="MinExecutionDuration" only-number="" class="form-control" min="0" max="86400000" ng-minlength="0" ng-maxlength="8" [(ngModel)]="minExecutionDuration">
+                                            <span class="input-group-addon">
+                                                ---
+                                            </span>
+                                            <input type="number" name="MaxExecutionDuration" only-number="" class="form-control" min="0" max="86400000" ng-minlength="0" ng-maxlength="8" [(ngModel)]="maxExecutionDuration">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">{{l("Action")}}</label>
+                                            <input type="text" name="MethodName" class="form-control" [(ngModel)]="methodName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">{{l("ErrorState")}}</label>
+                                            <select name="HasException" class="form-control" [(ngModel)]="hasException">
+                                                <option value="">{{l("All")}}</option>
+                                                <option value="false">{{l("Success")}}</option>
+                                                <option value="true">{{l("HasError")}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">{{l("Browser")}}</label>
+                                            <input type="text" name="BrowserInfo" class="form-control" [(ngModel)]="browserInfo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-10">
+                            <div class="col-sm-6">
+                                <span class="clickable-item text-muted" *ngIf="!advancedFiltersAreShown" (click)="advancedFiltersAreShown=!advancedFiltersAreShown"><i class="fa fa-angle-down"></i> {{l("ShowAdvancedFilters")}}</span>
+                                <span class="clickable-item text-muted" *ngIf="advancedFiltersAreShown" (click)="advancedFiltersAreShown=!advancedFiltersAreShown"><i class="fa fa-angle-up"></i> {{l("HideAdvancedFilters")}}</span>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <button type="button" class="btn btn-default" (click)="exportToExcel()"><i class="fa fa-file-excel-o"></i> {{l("ExportToExcel")}}</button>
+                                <button type="submit" class="btn blue"><i class="fa fa-refresh"></i> {{l("Refresh")}}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="portlet-body">
+            <!--<Primeng-Datatable-Start>-->
+            <div class="primeng-datatable-container" [busyIf]="primengDatatableHelper.isLoading">
+                <p-dataTable #dataTable
+                             (onLazyLoad)="getAuditLogs($event)"
+                             [value]="primengDatatableHelper.records"
+                             rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                             [paginator]="false"
+                             [lazy]="true"
+                             emptyMessage="{{l('NoData')}}"
+                             scrollable="true"
+                             ScrollWidth="100%"
+                             responsive="primengDatatableHelper.isResponsive"
+                             resizableColumns="primengDatatableHelper.resizableColumns">
+
+                    <p-column field="" [sortable]="false" [style]="{'width':'75px'}">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <div class="text-center">
+                                <button class="btn btn-default btn-xs" (click)="showDetails(record)"><i class="fa fa-search"></i></button>
+                            </div>
+                        </ng-template>
+                    </p-column>
+
+                    <p-column field="exception" header="" [sortable]="false" [style]="{'width':'75px'}">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <div class="text-center">
+                                <i *ngIf="record.exception" class="fa fa-warning font-yellow-gold"></i>
+                                <i *ngIf="!record.exception" class="fa fa-check-circle font-green"></i>
+                            </div>
+                        </ng-template>
+                    </p-column>
+
+                    <p-column field="executionTime" header="{{l('Time')}}" [sortable]="true" [style]="{'width':'150px'}">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            {{ record.executionTime | momentFormat:'YYYY-MM-DD HH:mm:ss'}}
+                        </ng-template>
+                    </p-column>
+
+                    <p-column field="userName" header="{{l('UserName')}}" [sortable]="true" [style]="{'width':'150px'}"></p-column>
+                    <p-column field="serviceName" header="{{l('Service')}}" [sortable]="false" [style]="{'width':'250px'}"></p-column>
+                    <p-column field="methodName" header="{{l('Action')}}" [sortable]="false" [style]="{'width':'250px'}"></p-column>
+                    <p-column field="executionDuration" header="{{l('Duration')}}" [sortable]="true" [style]="{'width':'100px'}">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            {{l('Xms', record.executionDuration)}}
+                        </ng-template>
+                    </p-column>
+                    <p-column field="clientIpAddress" header="{{l('IpAddress')}}" [sortable]="false" [style]="{'width':'150px'}"></p-column>
+                    <p-column field="clientName" header="{{l('Client')}}" [sortable]="false" [style]="{'width':'150px'}"></p-column>
+
+                    <p-column field="browserInfo" header="{{l('Browser')}}" [sortable]="false" [style]="{'width':'150px'}">
+                        <ng-template let-record="rowData" pTemplate="body">
+                            <span title="{{record.browserInfo}}">{{truncateStringWithPostfix(record.browserInfo, 20)}}</span>
+                        </ng-template>
+                    </p-column>
+                </p-dataTable>
+                <div class="primeng-paging-container">
+                    <p-paginator rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                                 #paginator
+                                 (onPageChange)="getAuditLogs($event)"
+                                 [totalRecords]="primengDatatableHelper.totalRecordsCount"
+                                 [rowsPerPageOptions]="primengDatatableHelper.predefinedRecordsCountPerPage">
+                    </p-paginator>
+                    <span class="total-records-count">
+                        {{l('TotalRecordsCount', primengDatatableHelper.totalRecordsCount)}}
+                    </span>
+                </div>
+            </div>
+            <!--<Primeng-Datatable-End>-->
+        </div>
+    </div>
+    <auditLogDetailModal #auditLogDetailModal></auditLogDetailModal>
+</div>

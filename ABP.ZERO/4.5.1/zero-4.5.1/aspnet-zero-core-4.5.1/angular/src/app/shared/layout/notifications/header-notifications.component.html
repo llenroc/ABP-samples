@@ -1,0 +1,33 @@
+﻿<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+    <i class="icon-bell"></i>
+    <span class="badge badge-danger" *ngIf="unreadNotificationCount"> {{unreadNotificationCount}} </span>
+</a>
+<ul class="dropdown-menu" id="UserNotificationDropdown">
+    <li class="external notifications-header">
+        <div class="text-left">
+            <a href="" (click)="setAllNotificationsAsRead(); $event.preventDefault(); $event.stopPropagation();" *ngIf="unreadNotificationCount">{{l("SetAllAsRead")}}</a>
+            <a class="pull-right" (click)="openNotificationSettingsModal()">{{l("Settings")}}</a>
+        </div>
+    </li>
+    <li>
+        <ul *ngFor="let notification of notifications" class="dropdown-menu-list">
+            <li>
+                <a (click)="gotoUrl(notification.url)" class="user-notification-item" [ngClass]="{'user-notification-item-unread': notification.state=='UNREAD', 'user-notification-item-clickable': notification.url}">
+                    <span class="details">
+                        <i class="{{notification.icon}}"></i> {{notification.text}}
+                    </span>
+                    <div>
+                        <span class="notification-time" title="{{notification.time}}" jq-plugin="timeago"></span>
+                        <span *ngIf="notification.state=='UNREAD'"> - <span class="set-as-read-text" (click)="setNotificationAsRead(notification); $event.preventDefault(); $event.stopPropagation();">{{l("SetAsRead")}}</span></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="notification-empty-text" *ngIf="!notifications.length">
+            {{l("ThereIsNoNotification")}}
+        </div>
+    </li>
+    <li class="external notifications-footer" *ngIf="notifications.length">
+        <div class="text-center"><a routerLink="notifications">{{l("SeeAllNotifications")}}</a></div>
+    </li>
+</ul>

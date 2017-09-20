@@ -1,0 +1,11 @@
+﻿<li class="media" (click)="selectChatFriend.emit($event)">
+    <div class="media-status">
+        <span *ngIf="friend.unreadMessageCount" class="badge bg-yellow-casablanca">{{friend.unreadMessageCount}}</span>
+    </div>
+    <!--<img *ngIf="friend.friendProfilePictureId" [remoteImageSrc]="getRemoteImageUrl(friend.friendProfilePictureId, friend.friendUserId, friend.friendTenantId)" class="media-object" alt="...">-->
+    <friend-profile-picture [profilePictureId]="friend.friendProfilePictureId" [userId]="friend.friendUserId" [tenantId]="friend.friendTenantId"></friend-profile-picture>
+    <div class="media-body" style="padding-top: 10px;">
+        <h4 class="media-heading">{{getShownUserName(friend.friendTenancyName,friend.friendUserName)}}</h4>
+    </div>
+    <span class="contact-status" [ngClass]="{'online':friend.isOnline, 'offline':!friend.isOnline}"></span>
+</li>

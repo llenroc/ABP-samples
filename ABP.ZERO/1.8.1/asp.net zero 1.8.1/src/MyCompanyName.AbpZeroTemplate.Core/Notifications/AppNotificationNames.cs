@@ -1,0 +1,11 @@
+namespace MyCompanyName.AbpZeroTemplate.Notifications
+{
+    /// <summary>
+    /// Constants for notification names used in this application.
+    /// </summary>
+    public static class AppNotificationNames
+    {
+        public const string WelcomeToTheApplication = "App.WelcomeToTheApplication";
+        public const string NewUserRegistered = "App.NewUserRegistered";
+    }
+}

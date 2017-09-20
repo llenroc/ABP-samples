@@ -1,0 +1,20 @@
+<div class="logo">
+    <a (click)="goToHome()">
+      <img *ngIf="!appSession.tenant || !appSession.tenant.logoId" src="/assets/common/images/app-logo-on-dark.png" alt="logo" width="168" height="33" />
+      <img *ngIf="appSession.tenant && appSession.tenant.logoId" [src]="remoteServiceBaseUrl + '/TenantCustomization/GetLogo?id=' + appSession.tenant.logoId" alt="logo" width="168" height="33" />
+    </a>
+</div>
+
+<div *ngIf="showTenantChange()" class="content tenant-change-box">
+    <tenant-change></tenant-change>
+</div>
+
+<div class="content account-forms">
+    <router-outlet></router-outlet>
+</div>
+
+<languageSwitch></languageSwitch>
+
+<div class="copyright">
+    {{currentYear}} © AbpZeroTemplate.
+</div>

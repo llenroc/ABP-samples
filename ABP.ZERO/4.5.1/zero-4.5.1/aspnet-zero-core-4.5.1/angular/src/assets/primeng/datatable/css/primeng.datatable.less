@@ -1,0 +1,77 @@
+﻿.primeng-datatable-container {
+    .ui-datatable {
+        table {
+            table-layout: fixed;
+
+            th, td {
+                overflow-wrap: break-word;
+            }
+
+            thead th, tfoot td {
+                text-align: left ;
+            }
+        }
+
+        .ui-datatable-thead > tr > th > span.ui-sortable-column-icon {
+            color: #bdbdbd;
+            float: right;
+        }
+
+        .ui-datatable-thead > tr > th, body .ui-datatable .ui-datatable-tfoot > tr > td {
+            background-color: #e6e6e6 !important;
+        }
+
+        thead {
+            th.ui-state-active {
+                background-color: rgb(53, 152, 220) !important;
+                border: 0 !important;
+            }
+        }
+    }
+
+    .ui-paginator-bottom {
+        text-align: left !important;
+    }
+
+    .ui-paginator {
+        text-align: left !important;
+        border-top: 0 !important;
+    }
+
+    .ui-datatable-tablewrapper > table > thead > tr > th.ui-state-active > span.ui-sortable-column-icon {
+        color: #ffffff !important;
+    }
+
+    .ui-state-active, .ui-state-highlight {
+        background-color: #3598dc !important;
+    }
+
+    .ui-paginator .ui-paginator-first,
+    .ui-paginator .ui-paginator-prev,
+    .ui-paginator .ui-paginator-next,
+    .ui-paginator .ui-paginator-last {
+        color: #3598dc !important;
+    }
+
+    .primeng-paging-container {
+        position: relative;
+    }
+
+    @media (min-width: 515px) {
+        .primeng-paging-container .total-records-count {
+            position: absolute;
+            top: 3px;
+            right: 5px;
+            margin: 5px;
+        }
+    }
+
+    /*Sets footer when no paging*/
+    p-datatable[ng-reflect-paginator=false] {
+        .ui-datatable-footer {
+            padding: 5px 10px 5px 5px;
+            text-align: right;
+            background-color: #ffffff;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<div [@routerTransition]>
+    <h3 class="form-title">{{l('VerifySecurityCode')}}</h3>
+
+    <p>{{l('VerifySecurityCode_Information')}}</p>
+
+    <form #twoFactorForm="ngForm" class="login-form" method="post" (ngSubmit)="submit()">
+
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">{{l('Code')}}</label>
+            <input autoFocus [(ngModel)]="code" class="form-control form-control-solid placeholder-no-fix input-ltr" type="password" autocomplete="off" placeholder="{{l('Code')}}" name="code" required maxlength="16" />
+        </div>
+
+        <div class="form-group">
+            <div class="mt-checkbox-list">
+                <label class="mt-checkbox mt-checkbox-outline">
+                    <input class="form-control" [(ngModel)]="loginService.authenticateModel.rememberClient" type="checkbox" name="rememberClient" value="true" />{{l("RememberThisBrowser")}}
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-success uppercase" [disabled]="!twoFactorForm.form.valid">{{l("Submit")}}</button>
+            <span class="remaining-time-counter">{{l("RemainingTime")}}: {{l("SecondShort{0}", remainingSeconds)}}.</span>
+        </div>
+    </form>
+</div>

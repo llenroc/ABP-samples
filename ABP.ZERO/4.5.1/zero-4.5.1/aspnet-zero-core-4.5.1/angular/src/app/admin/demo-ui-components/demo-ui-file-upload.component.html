@@ -1,0 +1,33 @@
+﻿<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject"> {{l("FileUpload")}}</span>
+        </div>
+    </div>
+    <div class="portlet-body">
+
+        <form role="form">
+
+            <div class="form-group form-md-line-input row">
+                <label class="col-md-2 control-label">Default file uploader</label>
+                <div class="col-md-10">
+
+                    <p-fileUpload multiple="multiple"
+                                  name="DefaultFileUploadFileInput[]"
+                                  [url]="uploadUrl"
+                                  accept="image/*"
+                                  maxFileSize="1000000"
+                                  (onUpload)="onUpload($event)">
+
+                        <ng-template pTemplate="content">
+                            <ul *ngIf="uploadedFiles.length">
+                                <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+                            </ul>
+                        </ng-template>
+                    </p-fileUpload>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

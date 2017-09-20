@@ -1,0 +1,67 @@
+﻿<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold uppercase">
+                <span *ngIf="organizationUnit">{{organizationUnit.displayName}}</span>
+                <span *ngIf="!organizationUnit">{{l("Members")}}</span>
+            </span>
+        </div>
+        <div class="actions" *ngIf="organizationUnit">
+            <a *ngIf="isGranted('Pages.Administration.OrganizationUnits.ManageMembers')" (click)="openAddModal()" class="btn btn-circle btn-default">
+                <i class="fa fa-plus"></i> {{l("AddMember")}}
+            </a>
+        </div>
+    </div>
+    <div class="portlet-body">
+        
+        <!--<Primeng-Datatable-Start>-->
+        <div class="primeng-datatable-container" [busyIf]="primengDatatableHelper.isLoading" [hidden]="!organizationUnit">
+            <p-dataTable #dataTable
+                         (onLazyLoad)="getOrganizationUnitUsers($event)"
+                         [value]="primengDatatableHelper.records"
+                         rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                         [paginator]="false"
+                         [lazy]="true"
+                         emptyMessage="{{l('NoData')}}"
+                         [responsive]="primengDatatableHelper.isResponsive">
+                <p-column field=""  
+                          header="{{l('Delete')}}"
+                          [sortable]="false"  
+                          [style]="{'width':'15%','text-align':'center'}"
+                          [hidden]="!permission.isGranted('Pages.Administration.OrganizationUnits.ManageMembers')">
+                    <ng-template let-record="rowData" pTemplate="body">
+                        <button class="btn btn-default btn-xs"
+                                (click)="removeMember(record)"
+                                title="{{l('Delete')}}">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </ng-template>
+                </p-column>
+                <p-column field="userName" header="{{l('UserName')}}" [sortable]="true"></p-column>
+                <p-column field="addedTime" header="{{l('AddedTime')}}" [sortable]="true">
+                    <ng-template let-record="rowData" pTemplate="body">
+                        {{record.addedTime | momentFormat:'L'}}
+                    </ng-template>
+                </p-column>
+            </p-dataTable>
+            <div class="primeng-paging-container">
+                <p-paginator rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                             #paginator
+                             (onPageChange)="getOrganizationUnitUsers($event)"
+                             [totalRecords]="primengDatatableHelper.totalRecordsCount"
+                             [rowsPerPageOptions]="primengDatatableHelper.predefinedRecordsCountPerPage">
+                </p-paginator>
+                <span class="total-records-count">
+                    {{l('TotalRecordsCount', primengDatatableHelper.totalRecordsCount)}}
+                </span>
+            </div>
+        </div>
+        <!--<Primeng-Datatable-End>-->
+
+        <div *ngIf="!organizationUnit" class="text-muted">
+            {{l("SelectAnOrganizationUnitToSeeMembers")}}
+        </div>
+    </div>
+</div>
+
+<addMemberModal #addMemberModal (membersAdded)="addMembers($event)"></addMemberModal>

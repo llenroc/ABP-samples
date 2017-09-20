@@ -1,0 +1,11 @@
+﻿<input type="hidden" name="PaymentId" value="" />
+<input type="hidden" name="PayerId" value="" />
+<div class="note note-info text-center" *ngIf="demoUsername">
+    <h4 class="block">{{l("DemoPayPalAccount")}}</h4>
+    <p>
+        <span>{{l("UserName")}}: <strong>{{demoUsername}}</strong></span><br />
+        <span>{{l("Password")}}: <strong>{{demoPassword}}</strong></span>
+    </p>
+</div>
+<div id="paypal-button"></div>
+<div [busyIf]="paypalIsLoading" *ngIf="paypalIsLoading"></div>

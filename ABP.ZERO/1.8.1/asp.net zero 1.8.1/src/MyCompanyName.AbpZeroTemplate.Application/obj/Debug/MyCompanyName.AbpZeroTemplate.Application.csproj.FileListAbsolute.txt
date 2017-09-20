@@ -1,0 +1,88 @@
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.dll.config
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.pdb
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.AutoMapper.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.Zero.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.Zero.Ldap.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\AutoMapper.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Core.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Facilities.Logging.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Windsor.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EntityFramework.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EPPlus.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\System.Collections.Immutable.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.pdb
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.dll.config
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.AutoMapper.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.Zero.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\AutoMapper.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Core.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Facilities.Logging.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Windsor.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EntityFramework.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EPPlus.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.Concurrent.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\System.Collections.Immutable.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\obj\Debug\MyCompanyName.AbpZeroTemplate.Application.csprojResolveAssemblyReference.cache
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\obj\Debug\MyCompanyName.AbpZeroTemplate.Application.csproj.CoreCompileInputs.cache
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\obj\Debug\MyCompanyName.AbpZeroTemplate.Application.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Application\obj\Debug\MyCompanyName.AbpZeroTemplate.Application.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.AutoMapper.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.Zero.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.Zero.Ldap.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\AutoMapper.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Facilities.Logging.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Windsor.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EntityFramework.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EPPlus.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\System.Collections.Immutable.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.AutoMapper.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Abp.Zero.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\AutoMapper.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Core.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Facilities.Logging.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Castle.Windsor.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EntityFramework.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\EPPlus.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.Concurrent.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\bin\Debug\System.Collections.Immutable.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\obj\Debug\MyCompanyName.AbpZeroTemplate.Application.csprojResolveAssemblyReference.cache
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\obj\Debug\MyCompanyName.AbpZeroTemplate.Application.csproj.CoreCompileInputs.cache
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\obj\Debug\MyCompanyName.AbpZeroTemplate.Application.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Application\obj\Debug\MyCompanyName.AbpZeroTemplate.Application.pdb

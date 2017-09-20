@@ -1,0 +1,57 @@
+﻿@using Abp.Web.Mvc.Extensions
+@using MyCompanyName.AbpZeroTemplate.Authorization
+@using MyCompanyName.AbpZeroTemplate.Web.Navigation
+@model MyCompanyName.AbpZeroTemplate.Web.Areas.Mpa.Models.Users.UsersViewModel
+@{
+    ViewBag.CurrentPageName = PageNames.App.Common.Users;
+}
+@section Styles
+{
+    @Html.IncludeStyle("~/Areas/Mpa/Views/Users/index.min.css")
+}
+@section Scripts
+{
+    @Html.IncludeScript("~/Areas/Mpa/Views/Common/_PermissionTree.js")
+    @Html.IncludeScript("~/Areas/Mpa/Views/Users/_CreateOrEditModal.js")
+    @Html.IncludeScript("~/Areas/Mpa/Views/Users/_PermissionsModal.js")
+    @Html.IncludeScript("~/Areas/Mpa/Views/Users/Index.js")
+}
+<div class="row margin-bottom-5">
+    <div class="col-xs-6">
+        <div class="page-head">
+            <div class="page-title">
+                <h1>
+                    <span>@L("Users")</span> <small>@L("UsersHeaderInfo")</small>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 text-right">
+        <button id="ExportUsersToExcelButton" class="btn btn-default"><i class="fa fa-file-excel-o"></i> @L("ExportToExcel")</button>
+        @if (IsGranted(AppPermissions.Pages_Administration_Users_Create))
+        {
+            <button id="CreateNewUserButton" class="btn btn-primary blue"><i class="fa fa-plus"></i> @L("CreateNewUser")</button>
+        }
+    </div>
+</div>
+
+<div class="portlet light">
+    <div class="portlet-title portlet-title-filter">
+        <div class="inputs inputs-full-width">
+            <div class="portlet-input">
+                <form>
+                    <div class="input-group">
+                        <input id="UsersTableFilter" class="form-control" placeholder="@L("SearchWithThreeDot")" type="text" value="@Model.FilterText">
+                        <span class="input-group-btn">
+                            <button id="GetUsersButton" class="btn default" type="submit"><i class="icon-magnifier"></i></button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="portlet-body">
+        <div id="UsersTable"></div>
+    </div>
+</div>

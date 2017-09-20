@@ -1,0 +1,155 @@
+<div bsModal #auditLogDetailModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="auditLogDetailModal"
+    aria-hidden="true" [config]="{backdrop: 'static'}">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <form *ngIf="active" #roleForm="ngForm" novalidate (ngSubmit)="save()">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" (click)="close()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">
+                        <span *ngIf="auditLog.userId">{{l("AuditLogDetail")}}</span>
+                    </h4>
+                </div>
+                
+                <div class="modal-body">
+
+                    <h3 class="form-section">{{l("UserInformations")}}</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">{{l("UserName")}}:</label>
+                                <div class="col-sm-9">
+                                    <p class="form-control-static">
+                                        <span>{{auditLog.userName}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">{{l("IpAddress")}}:</label>
+                                <div class="col-sm-9">
+                                    <p class="form-control-static">
+                                        <span>{{auditLog.ipAddress}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">{{l("Client")}}:</label>
+                                <div class="col-sm-9">
+                                    <p class="form-control-static">
+                                        <span>{{auditLog.clientName}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">{{l("Browser")}}:</label>
+                                <div class="col-sm-9">
+                                    <p class="form-control-static">
+                                        <span>{{auditLog.browserInfo}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group" *ngIf="auditLog.impersonatorUserId">
+                                <label class="control-label col-sm-3"></label>
+                                <div class="col-sm-9">
+                                    <p class="form-control-static text-warning">
+                                        {{l("AuditLogImpersonatedOperationInfo")}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="form-section">{{l("ActionInformations")}}</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">{{l("Service")}}:</label>
+                                <div class="col-sm-9">
+                                    <p class="form-control-static">
+                                        <span>{{auditLog.serviceName}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">{{l("Action")}}:</label>
+                                <div class="col-sm-9">
+                                    <p class="form-control-static">
+                                        <span>{{auditLog.methodName}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">{{l("Time")}}:</label>
+                                <div class="col-sm-9">
+                                    <p class="form-control-static">
+                                        <span>{{getExecutionTime()}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">{{l("Duration")}}:</label>
+                                <div class="col-sm-9">
+                                    <p class="form-control-static">
+                                        <span>{{getDurationAsMs()}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">{{l("Parameters")}}:</label>
+                                <div class="col-sm-9">
+                                    <pre lang="js">{{getFormattedParameters()}}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="form-section">{{l("CustomData")}}</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <p class="form-control-static">
+                                        {{l("None")}}
+                                    </p>
+                                    <pre *ngIf="auditLog.customData">{{auditLog.customData}}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="form-section">{{l("ErrorState")}}</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <p class="form-control-static">
+                                        <i class="fa fa-check-circle font-green"></i> {{l("Success")}}
+                                    </p>
+                                    <pre *ngIf="auditLog.exception">{{auditLog.exception}}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" (click)="close()">{{l("Close")}}</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

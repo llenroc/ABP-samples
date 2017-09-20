@@ -1,0 +1,142 @@
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.abstractions.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.execution.desktop.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.runner.utility.desktop.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Tests.dll.config
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Tests.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Tests.pdb
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.EntityFramework.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.TestBase.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.Zero.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.Zero.EntityFramework.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Core.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Facilities.Logging.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Windsor.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Effort.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EntityFramework.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EntityFramework.DynamicFilters.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.EntityFramework.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\NMemory.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Shouldly.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\System.Collections.Immutable.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.assert.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.core.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.AutoMapper.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\AutoMapper.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EPPlus.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.Zero.Ldap.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.pdb
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.dll.config
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.pdb
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.dll.config
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.EntityFramework.pdb
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.EntityFramework.dll.config
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.EntityFramework.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.Zero.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.Zero.EntityFramework.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Core.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Facilities.Logging.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Windsor.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Effort.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EntityFramework.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.Concurrent.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\NMemory.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\System.Collections.Immutable.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.assert.pdb
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.assert.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.core.pdb
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.core.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.AutoMapper.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\AutoMapper.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EPPlus.xml
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\obj\Debug\MyCompanyName.AbpZeroTemplate.Tests.csprojResolveAssemblyReference.cache
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\obj\Debug\MyCompanyName.AbpZeroTemplate.Tests.csproj.CoreCompileInputs.cache
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\obj\Debug\MyCompanyName.AbpZeroTemplate.Tests.dll
+C:\Users\hnscd\Desktop\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\obj\Debug\MyCompanyName.AbpZeroTemplate.Tests.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.runner.utility.desktop.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.abstractions.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.execution.desktop.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Tests.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Tests.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Tests.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.EntityFramework.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.TestBase.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.Zero.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.Zero.EntityFramework.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Facilities.Logging.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Windsor.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Effort.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EntityFramework.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EntityFramework.DynamicFilters.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.EntityFramework.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\NMemory.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Shouldly.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\System.Collections.Immutable.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.assert.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.AutoMapper.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\AutoMapper.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EPPlus.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.Zero.Ldap.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Application.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.Core.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.EntityFramework.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\MyCompanyName.AbpZeroTemplate.EntityFramework.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.EntityFramework.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.Zero.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.Zero.EntityFramework.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Core.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Facilities.Logging.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Castle.Windsor.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Effort.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EntityFramework.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.Concurrent.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\NMemory.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\System.Collections.Immutable.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.assert.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.assert.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.core.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\xunit.core.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\Abp.AutoMapper.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\AutoMapper.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\bin\Debug\EPPlus.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\obj\Debug\MyCompanyName.AbpZeroTemplate.Tests.csprojResolveAssemblyReference.cache
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\obj\Debug\MyCompanyName.AbpZeroTemplate.Tests.csproj.CoreCompileInputs.cache
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\obj\Debug\MyCompanyName.AbpZeroTemplate.Tests.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\Tests\MyCompanyName.AbpZeroTemplate.Tests\obj\Debug\MyCompanyName.AbpZeroTemplate.Tests.pdb

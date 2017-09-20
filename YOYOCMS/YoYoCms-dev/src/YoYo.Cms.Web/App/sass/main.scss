@@ -1,0 +1,63 @@
+@import 'common';
+
+@import 'app/form.scss';
+@import 'app/_modals.scss';
+@import 'app/_alerts.scss';
+@import 'views/user.scss';
+@import 'views/auditlog.scss';
+.ui-grid {
+    min-height: 480px;
+    height: auto;
+}
+
+.ui-grid-menu-button {
+    height: 31px;
+}
+
+.ui-grid .dropdown.open {
+    position: fixed;
+    z-index: 10;
+}
+
+.ui-grid-row .ui-grid-cell {
+    height: 39px !important;
+    line-height: 29px;
+}
+
+.ui-grid-cell-contents > button.btn-xs {
+    padding: 3px 10px;
+    /*border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding: 0;*/
+}
+
+.grid {
+    width: auto;
+    min-width: 400px;
+    height: 100%;
+}
+ 
+.clickable-item{
+    cursor:pointer;
+}
+.font-green {
+    color: rgb(50, 197, 210);
+}
+.font-yellow-gold {
+    color: rgb(232, 126, 4);
+}
+
+.dropdown-menu>li>a{
+
+    cursor:pointer;
+
+
+}
+
+ 
+
+
+
+// injector
+// endinjector

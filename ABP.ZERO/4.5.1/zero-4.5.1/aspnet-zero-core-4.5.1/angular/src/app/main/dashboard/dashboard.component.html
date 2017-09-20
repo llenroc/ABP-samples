@@ -1,0 +1,580 @@
+﻿<div [@routerTransition]>
+    <div class="row margin-bottom-5">
+        <div class="col-xs-6">
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>
+                        <span>Dashboard</span> <small>statistics and reports</small>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row margin-top-10">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2">
+                <div class="display">
+                    <div class="number">
+                        <h3 class="font-green-sharp">
+                            <span counto [step]="30"
+                                  [duration]="1"
+                                  [countFrom]="0"
+                                  [countTo]="dashboardHeaderStats.totalProfit"
+                                  (countoChange)="dashboardHeaderStats.totalProfitCounter = $event">
+                                {{dashboardHeaderStats.totalProfitCounter.toFixed(0)}}
+                            </span>
+                            <small class="font-green-sharp">$</small>
+                        </h3>
+                        <small>TOTAL PROFIT</small>
+                    </div>
+                    <div class="icon">
+                        <i class="icon-pie-chart"></i>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <div class="progress">
+                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                            <span class="sr-only">{{dashboardHeaderStats.totalProfitChange}}% progress</span>
+                        </span>
+                    </div>
+                    <div class="status">
+                        <div class="status-title">
+                            progress
+                        </div>
+                        <div class="status-number">
+                            <span counto
+                                  [step]="10"
+                                  [duration]="1"
+                                  [countFrom]="0"
+                                  [countTo]="dashboardHeaderStats.totalProfitChange"
+                                  (countoChange)="dashboardHeaderStats.totalProfitChangeCounter = $event">
+                                {{dashboardHeaderStats.totalProfitChangeCounter.toFixed(0)}}
+                            </span>%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2" >
+                <div class="display">
+                    <div class="number">
+                        <h3 class="font-red-haze"
+                            counto [step]="30"
+                            [duration]="1"
+                            [countFrom]="0"
+                            [countTo]="dashboardHeaderStats.newFeedbacks"
+                            (countoChange)="dashboardHeaderStats.newFeedbacksCounter = $event">
+                            {{dashboardHeaderStats.newFeedbacksCounter.toFixed(0)}}
+                        </h3>
+                        <small>NEW FEEDBACKS</small>
+                    </div>
+                    <div class="icon">
+                        <i class="icon-like"></i>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <div class="progress">
+                        <span style="width: 85%;" class="progress-bar progress-bar-success red-haze">
+                            <span class="sr-only">{{dashboardHeaderStats.newFeedbacksChange}}% change</span>
+                        </span>
+                    </div>
+                    <div class="status">
+                        <div class="status-title">
+                            change
+                        </div>
+                        <div class="status-number">
+                            <span counto
+                                  [step]="10"
+                                  [duration]="1"
+                                  [countFrom]="0"
+                                  [countTo]="dashboardHeaderStats.newFeedbacksChange"
+                                  (countoChange)="dashboardHeaderStats.newFeedbacksChangeCounter = $event">
+                                {{dashboardHeaderStats.newFeedbacksChangeCounter.toFixed(0)}}
+                            </span>%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2">
+                <div class="display">
+                    <div class="number">
+                        <h3 class="font-blue-sharp"
+                            counto
+                            [step]="30"
+                            [duration]="1"
+                            [countFrom]="0"
+                            [countTo]="dashboardHeaderStats.newOrders"
+                            (countoChange)="dashboardHeaderStats.newOrdersCounter = $event">
+                            {{dashboardHeaderStats.newOrdersCounter.toFixed(0)}}
+                        </h3>
+                        <small>NEW ORDERS</small>
+                    </div>
+                    <div class="icon">
+                        <i class="icon-basket"></i>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <div class="progress">
+                        <span style="width: 45%;" class="progress-bar progress-bar-success blue-sharp">
+                            <span class="sr-only">{{dashboardHeaderStats.newOrdersChange}}% grow</span>
+                        </span>
+                    </div>
+                    <div class="status">
+                        <div class="status-title">
+                            grow
+                        </div>
+                        <div class="status-number">
+                            <span counto
+                                  [step]="10"
+                                  [duration]="1"
+                                  [countFrom]="0"
+                                  [countTo]="dashboardHeaderStats.newOrdersChange"
+                                  (countoChange)="dashboardHeaderStats.newOrdersChangeCounter = $event">
+                                {{dashboardHeaderStats.newOrdersChangeCounter.toFixed(0)}}
+                            </span>%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2">
+                <div class="display">
+                    <div class="number">
+                        <h3 class="font-purple-soft"
+                            counto
+                            [step]="30"
+                            [duration]="1"
+                            [countFrom]="0"
+                            [countTo]="dashboardHeaderStats.newUsers"
+                            (countoChange)="dashboardHeaderStats.newUsersCounter = $event">
+                            {{dashboardHeaderStats.newUsersCounter.toFixed(0)}}
+                        </h3>
+                        <small>NEW USERS</small>
+                    </div>
+                    <div class="icon">
+                        <i class="icon-user"></i>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <div class="progress">
+                        <span style="width: 57%;" class="progress-bar progress-bar-success purple-soft">
+                            <span class="sr-only">{{dashboardHeaderStats.newUsersChange}}% change</span>
+                        </span>
+                    </div>
+                    <div class="status">
+                        <div class="status-title">
+                            change
+                        </div>
+                        <div class="status-number">
+                            <span counto
+                                  [step]="10"
+                                  [duration]="1"
+                                  [countFrom]="0"
+                                  [countTo]="dashboardHeaderStats.newUsersChange"
+                                  (countoChange)="dashboardHeaderStats.newUsersChangeCounter = $event">
+                                {{dashboardHeaderStats.newUsersChangeCounter.toFixed(0)}}
+                            </span>%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-xs-12 col-sm-12">
+            <!-- BEGIN PORTLET-->
+            <div class="portlet light " [busyIf]="salesSummaryChart.loading">
+                <div class="portlet-title">
+                    <div class="caption caption-md">
+                        <i class="icon-bar-chart font-green-haze hide"></i>
+                        <span class="caption-subject font-green-haze bold uppercase">Sales Summary</span>
+                        <span class="caption-helper hide">weekly stats...</span>
+                    </div>
+                    <div class="actions">
+                        <div class="btn-group btn-group-devided">
+                            <label class="btn btn-transparent grey-salsa btn-circle btn-sm"
+                                   [ngClass]="{'active': selectedSalesSummaryDatePeriod==appSalesSummaryDateInterval.Daily}">
+                                <input type="radio"
+                                       name="SalesSummaryDateInterval"
+                                       class="hide"
+                                       (change)="salesSummaryChart.reload(appSalesSummaryDateInterval.Daily)"
+                                       [(ngModel)]="selectedSalesSummaryDatePeriod"
+                                       [checked]="selectedSalesSummaryDatePeriod==appSalesSummaryDateInterval.Daily"
+                                       [value]="appSalesSummaryDateInterval.Daily">Daily
+                            </label>
+                            <label class="btn btn-transparent grey-salsa btn-circle btn-sm"
+                                   [ngClass]="{'active': selectedSalesSummaryDatePeriod==appSalesSummaryDateInterval.Weekly}">
+                                <input type="radio"
+                                       name="SalesSummaryDateInterval"
+                                       class="hide"
+                                       (change)="salesSummaryChart.reload(appSalesSummaryDateInterval.Weekly)"
+                                       [(ngModel)]="selectedSalesSummaryDatePeriod"
+                                       [checked]="selectedSalesSummaryDatePeriod==appSalesSummaryDateInterval.Weekly"
+                                       [value]="appSalesSummaryDateInterval.Weekly">Weekly
+                            </label>
+                            <label class="btn btn-transparent grey-salsa btn-circle btn-sm"
+                                   [ngClass]="{'active': selectedSalesSummaryDatePeriod==appSalesSummaryDateInterval.Monthly}">
+                                <input type="radio"
+                                       class="hide"
+                                       name="SalesSummaryDateInterval"
+                                       (change)="salesSummaryChart.reload(appSalesSummaryDateInterval.Monthly)"
+                                       [(ngModel)]="selectedSalesSummaryDatePeriod"
+                                       [checked]="selectedSalesSummaryDatePeriod==appSalesSummaryDateInterval.Monthly"
+                                       [value]="appSalesSummaryDateInterval.Monthly">Monthly
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="row list-separated">
+                        <div class="col-md-3 col-sm-3 col-xs-6">
+                            <div class="font-grey-mint font-sm">
+                                Total Sales
+                            </div>
+                            <div class="uppercase font-hg font-red-flamingo">
+                                <span counto
+                                      [step]="30"
+                                      [duration]="1"
+                                      [countFrom]="0"
+                                      [countTo]="salesSummaryChart.totalSales"
+                                      (countoChange)="salesSummaryChart.totalSalesCounter = $event">
+                                    {{salesSummaryChart.totalSalesCounter.toFixed(0)}}
+                                </span>
+                                <span class="font-lg font-red-flamingo">$</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6">
+                            <div class="font-grey-mint font-sm">
+                                Revenue
+                            </div>
+                            <div class="uppercase font-hg font-green-haze">
+                                <span counto
+                                      [step]="30"
+                                      [duration]="1"
+                                      [countFrom]="0"
+                                      [countTo]="salesSummaryChart.revenue"
+                                      (countoChange)="salesSummaryChart.revenuesCounter = $event">
+                                    {{salesSummaryChart.revenuesCounter.toFixed(0)}}
+                                </span>
+                                <span class="font-lg font-green-haze">$</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6">
+                            <div class="font-grey-mint font-sm">
+                                Expenses
+                            </div>
+                            <div class="uppercase font-hg font-purple">
+                                <span counto
+                                      [step]="30"
+                                      [duration]="1"
+                                      [countFrom]="0"
+                                      [countTo]="salesSummaryChart.expenses"
+                                      (countoChange)="salesSummaryChart.expensesCounter = $event">
+                                    {{salesSummaryChart.expensesCounter.toFixed(0)}}
+                                </span>
+                                <span class="font-lg font-purple">$</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6">
+                            <div class="font-grey-mint font-sm">
+                                Growth
+                            </div>
+                            <div class="uppercase font-hg font-blue-sharp">
+                                <span counto
+                                      [step]="30"
+                                      [duration]="1"
+                                      [countFrom]="0"
+                                      [countTo]="salesSummaryChart.growth"
+                                      (countoChange)="salesSummaryChart.growthCounter = $event">
+                                    {{salesSummaryChart.growthCounter.toFixed(0)}}
+                                </span>
+                                <span class="font-lg font-blue-sharp">$</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="salesStatistics"
+                         class="portlet-body-morris-fit morris-chart"
+                         style="height: 260px;">
+                    </div>
+                </div>
+            </div>
+            <!-- END PORTLET-->
+        </div>
+
+        <div class="col-lg-6 col-xs-12 col-sm-12">
+            <!-- BEGIN REGIONAL STATS PORTLET-->
+            <div class="portlet light bordered" [busyIf]="regionalStatsWorldMap.loading">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-share font-dark hide"></i>
+                        <span class="caption-subject  font-green-haze bold uppercase">Regional Stats</span>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div id="region_statistics_content">
+                        <div id="worldmap" style="height: 320px"> </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END REGIONAL STATS PORTLET-->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-xs-12 col-sm-12">
+            <div class="portlet light bordered" style="min-height:212px" [busyIf]="generalStatsPieChart.loading">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-cursor font-dark hide"></i>
+                        <span class="caption-subject  font-green-haze bold uppercase">General Stats</span>
+                    </div>
+                    <div class="actions">
+                        <a href="javascript:;" class="btn btn-sm btn-circle red" (click)="generalStatsPieChart.reload()">
+                            <i class="fa fa-repeat"></i> Reload
+                        </a>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="easy-pie-chart">
+                                <div class="number">
+                                    <span>+{{generalStatsPieChart.transactionPercent.value}}%</span>
+                                    <easy-pie-chart [percent]="generalStatsPieChart.transactionPercent.value"
+                                                    [options]="generalStatsPieChart.transactionPercent.options">
+                                    </easy-pie-chart>
+                                </div>
+
+                                <a class="title" href="javascript:;">
+                                    Transactions
+                                    <i class="icon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="margin-bottom-10 visible-sm"> </div>
+                        <div class="col-md-4">
+                            <div class="easy-pie-chart">
+                                <div class="number">
+                                    <span>+{{generalStatsPieChart.newVisitPercent.value}}%</span>
+                                    <easy-pie-chart [percent]="generalStatsPieChart.newVisitPercent.value"
+                                                    [options]="generalStatsPieChart.newVisitPercent.options">
+                                    </easy-pie-chart>
+                                </div>
+
+                                <a class="title" href="javascript:;">
+                                    New Visits
+                                    <i class="icon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="margin-bottom-10 visible-sm"> </div>
+                        <div class="col-md-4">
+                            <div class="easy-pie-chart">
+                                <div class="number">
+                                    <span>+{{generalStatsPieChart.bouncePercent.value}}%</span>
+                                    <easy-pie-chart [percent]="generalStatsPieChart.bouncePercent.value"
+                                                    [options]="generalStatsPieChart.bouncePercent.options">
+                                    </easy-pie-chart>
+                                </div>
+
+                                <a class="title" href="javascript:;">
+                                    Bounce
+                                    <i class="icon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12 col-sm-12">
+            <div class="portlet light bordered" style="min-height:212px" [busyIf]="serverStatsLineChart.loading">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-equalizer font-dark hide"></i>
+                        <span class="caption-subject font-green-haze bold uppercase">Server Stats</span>
+                        <span class="caption-helper">monthly stats...</span>
+                    </div>
+                    <div class="tools">
+                        <a href="" class="collapse"> </a>
+                        <a href="#portlet-config" data-toggle="modal" class="config"> </a>
+                        <a href="" class="reload" (click)="serverStatsLineChart.reload()"> </a>
+                        <a href="" class="remove"> </a>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="sparkline-chart">
+                                <div class="number" id="network"></div>
+                                <a class="title" href="javascript:;">
+                                    Network
+                                    <i class="icon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="margin-bottom-10 visible-sm"> </div>
+                        <div class="col-md-4">
+                            <div class="sparkline-chart">
+                                <div class="number" id="cpu-load"></div>
+                                <a class="title" href="javascript:;">
+                                    CPU Load
+                                    <i class="icon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="margin-bottom-10 visible-sm"> </div>
+                        <div class="col-md-4">
+                            <div class="sparkline-chart">
+                                <div class="number" id="load-rate"></div>
+                                <a class="title" href="javascript:;">
+                                    Load Rate
+                                    <i class="icon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-xs-12 col-sm-12">
+            <!-- BEGIN PORTLET-->
+            <div class="portlet light portlet-fit bordered" style="height: 360px" [busyIf]="activitiesTimeline.loading">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-directions font-green hide"></i>
+                        <span class="caption-subject bold font-green-haze uppercase"> Activities</span>
+                        <span class="caption-helper">Horizontal Timeline</span>
+                    </div>
+                    <div class="actions">
+                        <div class="btn-group">
+                            <a class="btn blue btn-outline btn-circle btn-sm"
+                               href="javascript:;"
+                               data-toggle="dropdown"
+                               data-close-others="true">
+                                Actions
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a href="javascript:;"> Action 1</a>
+                                </li>
+                                <li class="divider"> </li>
+                                <li>
+                                    <a href="javascript:;">Action 2</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Action 3</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Action 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div id="horizontalTimelineContainer" data-spacing="60">
+                        <div class="timeline">
+                            <div class="events-wrapper">
+                                <div class="events">
+                                    <ol id="timelineDateList"></ol>
+                                    <span class="filling-line bg-red" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                            <ul class="cd-timeline-navigation mt-ht-nav-icon">
+                                <li>
+                                    <a href="#0" class="prev inactive btn btn-outline red md-skip">
+                                        <i class="fa fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="next btn btn-outline red md-skip">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="events-content">
+                            <ol id="timelineDetails"></ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END PORTLET-->
+        </div>
+
+        <div class="col-lg-6 col-xs-12 col-sm-12">
+            <!-- BEGIN PORTLET-->
+            <div class="portlet light" [busyIf]="memberActivityTable.loading">
+                <div class="portlet-title">
+                    <div class="caption caption-md">
+                        <i class="icon-bar-chart font-green-haze hide"></i>
+                        <span class="caption-subject font-green-haze bold uppercase">Member Activity</span>
+                        <span class="caption-helper hide">weekly stats...</span>
+                    </div>
+                    <div class="actions">
+                        <button (click)="memberActivityTable.reload()" class="btn btn-success btn-rounded"><i class="fa fa-refresh"></i> Refresh</button>
+                    </div>
+                </div>
+                <div class="portlet-body" style="height: 271px;">
+                    <div class="table-scrollable table-scrollable-borderless">
+                        <table class="table table-hover table-light">
+                            <thead>
+                                <tr class="uppercase">
+                                    <th colspan="2">
+                                        MEMBER
+                                    </th>
+                                    <th>
+                                        Earnings
+                                    </th>
+                                    <th>
+                                        CASES
+                                    </th>
+                                    <th>
+                                        CLOSED
+                                    </th>
+                                    <th>
+                                        RATE
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr *ngFor="let m of memberActivityTable.memberActivities; let index = index">
+                                <td class="fit">
+                                    <img class="user-pic" src="/assets/metronic/admin/layout4/img/avatar{{index + 4}}.jpg">
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="primary-link">{{m.name}}</a>
+                                </td>
+                                <td>
+                                    {{m.earnings}}
+                                </td>
+                                <td>
+                                    {{m.cases}}
+                                </td>
+                                <td>
+                                    {{m.closed}}
+                                </td>
+                                <td>
+                                    <span class="bold font-green-haze">{{m.rate}}</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- END PORTLET-->
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,330 @@
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Web.dll.config
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Web.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Web.pdb
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.AutoMapper.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.EntityFramework.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.HangFire.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Owin.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Api.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Api.OData.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Mvc.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.SignalR.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Zero.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Zero.EntityFramework.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Zero.Ldap.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Antlr3.Runtime.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\AutoMapper.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Core.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Facilities.Logging.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Services.Logging.Log4netIntegration.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Windsor.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\EntityFramework.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\EntityFramework.DynamicFilters.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Hangfire.Core.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Hangfire.SqlServer.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\log4net.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.OData.Core.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.OData.Edm.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Spatial.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Application.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Core.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.EntityFramework.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.WebApi.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Newtonsoft.Json.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.Concurrent.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.Enlightenment.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Owin.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Recaptcha.Web.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Collections.Immutable.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Helpers.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Mvc.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.OData.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Optimization.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Razor.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\WebGrease.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\EPPlus.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Linq.Dynamic.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Swashbuckle.Core.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.Owin.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Application.pdb
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Application.dll.config
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Core.pdb
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Core.dll.config
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.EntityFramework.pdb
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.EntityFramework.dll.config
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.WebApi.pdb
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.WebApi.dll.config
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.AutoMapper.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.EntityFramework.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.HangFire.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Owin.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Api.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Api.OData.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Mvc.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.SignalR.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Zero.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Zero.EntityFramework.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Antlr3.Runtime.pdb
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\AutoMapper.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Core.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Facilities.Logging.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Windsor.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\EntityFramework.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Hangfire.Core.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Hangfire.SqlServer.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\log4net.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.OData.Core.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.OData.Edm.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Spatial.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Newtonsoft.Json.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.Concurrent.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.Enlightenment.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Collections.Immutable.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Helpers.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Mvc.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.OData.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Optimization.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Razor.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\EPPlus.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.Owin.xml
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\de\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\es\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\fr\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\it\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\ja\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\ko\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\ru\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hans\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hant\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\de\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\es\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\fr\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\it\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\ja\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\ko\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\ru\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hans\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hant\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\de\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\es\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\fr\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\it\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\ja\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\ko\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\ru\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hans\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hant\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\obj\Debug\MyCompanyName.AbpZeroTemplate.Web.csprojResolveAssemblyReference.cache
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\obj\Debug\MyCompanyName.AbpZeroTemplate.Web.csproj.CoreCompileInputs.cache
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\obj\Debug\MyCompanyName.AbpZeroTemplate.Web.dll
+C:\Users\hnscd\Desktop\src\MyCompanyName.AbpZeroTemplate.Web\obj\Debug\MyCompanyName.AbpZeroTemplate.Web.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Web.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Web.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Web.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.AutoMapper.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.EntityFramework.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.HangFire.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Owin.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Api.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Api.OData.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Mvc.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.SignalR.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Zero.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Zero.EntityFramework.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Zero.Ldap.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Antlr3.Runtime.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\AutoMapper.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Facilities.Logging.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Services.Logging.Log4netIntegration.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Windsor.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\EntityFramework.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\EntityFramework.DynamicFilters.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Hangfire.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Hangfire.SqlServer.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\log4net.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.OData.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.OData.Edm.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Spatial.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Application.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.EntityFramework.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.WebApi.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Newtonsoft.Json.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.Concurrent.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.Enlightenment.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Owin.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Recaptcha.Web.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Collections.Immutable.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Helpers.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Mvc.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.OData.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Optimization.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Razor.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\WebGrease.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\EPPlus.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Linq.Dynamic.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Swashbuckle.Core.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.Owin.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Application.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Application.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Core.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.Core.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.EntityFramework.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.EntityFramework.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.WebApi.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\MyCompanyName.AbpZeroTemplate.WebApi.dll.config
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.AutoMapper.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.EntityFramework.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.HangFire.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Owin.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Api.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Api.OData.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.Mvc.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Web.SignalR.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Zero.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Abp.Zero.EntityFramework.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Antlr3.Runtime.pdb
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\AutoMapper.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Core.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Facilities.Logging.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Castle.Windsor.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\EntityFramework.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Hangfire.Core.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Hangfire.SqlServer.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\log4net.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.OData.Core.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.OData.Edm.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Microsoft.Spatial.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Newtonsoft.Json.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.Concurrent.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\Nito.AsyncEx.Enlightenment.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Collections.Immutable.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Helpers.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Mvc.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.OData.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Optimization.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Razor.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\EPPlus.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\System.Web.Http.Owin.xml
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\de\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\es\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\fr\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\it\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\ja\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\ko\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\ru\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hans\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hant\Microsoft.OData.Core.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\de\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\es\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\fr\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\it\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\ja\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\ko\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\ru\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hans\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hant\Microsoft.OData.Edm.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\de\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\es\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\fr\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\it\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\ja\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\ko\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\ru\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hans\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\bin\zh-Hant\Microsoft.Spatial.resources.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\obj\Debug\MyCompanyName.AbpZeroTemplate.Web.csprojResolveAssemblyReference.cache
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\obj\Debug\MyCompanyName.AbpZeroTemplate.Web.csproj.CoreCompileInputs.cache
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\obj\Debug\MyCompanyName.AbpZeroTemplate.Web.dll
+C:\Users\hnscd\Documents\GitHub\SaurerPlantCenter\asp.net zero 1.8.1\src\MyCompanyName.AbpZeroTemplate.Web\obj\Debug\MyCompanyName.AbpZeroTemplate.Web.pdb

@@ -1,0 +1,14 @@
+﻿@using MyCompanyName.AbpZeroTemplate.Web.Areas.Mpa.Models.Common.Modals
+
+@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("ChangeProfilePicture")))
+
+<div class="modal-body">
+    <form id="ChangeProfilePictureModalForm" method="POST" action="@(ApplicationPath + "Profile/ChangeProfilePicture")">
+        <div class="form-group">
+            <input type="file" name="ProfilePicture" />
+            <span class="help-block m-b-none">@L("ProfilePicture_Change_Info")</span>
+        </div>
+    </form>
+</div>
+
+@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")

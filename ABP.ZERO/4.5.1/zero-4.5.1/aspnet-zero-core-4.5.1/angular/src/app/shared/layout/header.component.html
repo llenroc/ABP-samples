@@ -1,0 +1,112 @@
+﻿<div class="page-header navbar navbar-fixed-top md-shadow-zero-light">
+    <div class="page-header-inner">
+        <div class="page-logo">
+            <a routerLink="/" target="_blank">
+                <img *ngIf="!appSession.tenant || !appSession.tenant.logoId" src="/assets/common/images/app-logo-on-light.png" alt="logo" class="logo-default" width="168" height="33" />
+                <img *ngIf="appSession.tenant && appSession.tenant.logoId" [src]="remoteServiceBaseUrl + '/TenantCustomization/GetLogo?id=' + appSession.tenant.logoId" alt="logo" class="logo-default" width="168" height="33" />
+            </a>
+            <div class="menu-toggler sidebar-toggler">
+                <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+            </div>
+        </div>
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+        </a>
+        <div class="page-top">
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li *ngIf="languages.length" class="dropdown dropdown-language">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <i [class]="currentLanguage.icon"></i>
+                            <span class="langname">
+                                {{currentLanguage.displayName}}
+                            </span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li *ngFor="let language of languages">
+                                <a href="javascript:;" (click)="changeLanguage(language.name)">
+                                    <i [class]="language.icon"></i> {{language.displayName}}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li headerNotifications class="dropdown dropdown-extended dropdown-notification dropdown-dark" id="header_notification_bar"></li>
+                    <li class="separator hide"> </li>
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-user dropdown-dark">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <span class="username username-hide-on-mobile">
+                                <i *ngIf="isImpersonatedLogin" class="icon-action-undo font-red-sunglo"></i>
+                                {{shownLoginName}}
+                            </span>
+                            <img *ngIf="profilePicture" id="HeaderProfilePicture" alt="" class="img-circle" [src]="profilePicture" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li *ngIf="isImpersonatedLogin">
+                                <a (click)="backToMyAccount()"><i class="icon-action-undo"></i> <strong>{{l("BackToMyAccount")}}</strong></a>
+                            </li>
+                            <li *ngIf="isImpersonatedLogin" class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a class="open-left"><i class="icon-link"></i> {{l("LinkedAccounts")}}</a>
+                                <ul id="RecentlyUsedLinkedUsers" class="dropdown-menu" style="" *ngIf="recentlyLinkedUsers">
+                                    <li *ngFor="let linkedUser of recentlyLinkedUsers">
+                                        <a (click)="switchToLinkedUser(linkedUser)" class="recently-linked-user">
+                                            {{getShownUserName(linkedUser)}}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a (click)="showLinkedAccounts()">
+                                            <i class="icon-settings"></i> {{l("ManageAccounts")}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="UserProfileChangePasswordLink" (click)="changePassword()"><i class="icon-key"></i> {{l("ChangePassword")}}</a>
+                            </li>
+                            <li>
+                                <a id="ShowLoginAttemptsLink" (click)="showLoginAttempts()"><i class="icon-shield"></i> {{l("LoginAttempts")}}</a>
+                            </li>
+                            <li>
+                                <a id="UserProfileChangePictureLink" (click)="changeProfilePicture()"><i class="icon-user"></i> {{l("ChangeProfilePicture")}}</a>
+                            </li>
+                            <li>
+                                <a id="UserProfileMySettingsLink" (click)="changeMySettings()"><i class="icon-settings"></i> {{l("MySettings")}}</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:;" (click)="logout()"><i class="icon-logout"></i> {{l("Logout")}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li *ngIf="chatEnabled && !chatConnected" class="dropdown dropdown-extended">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <img *ngIf="!chatConnected" src="../../../assets/metronic/global/img/loading.gif" tooltip="{{l('ChatIsConnecting')}}" placement="left" />
+                        </a>
+                    </li>
+                    <li class="dropdown dropdown-extended quick-sidebar-toggler" *ngIf="chatEnabled && chatConnected">
+                        <span class="sr-only">Toggle Quick Sidebar</span>
+                        <i class="icon-speech"></i>
+                        <span id="UnreadChatMessageCount" class="badge badge-danger" [ngClass]="{'hidden': !unreadChatMessageCount}">{{unreadChatMessageCount}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div *ngIf="subscriptionStatusBarVisible()"
+             [ngClass]="{'hidden': !subscriptionStatusBarVisible()}" class="alert hidden subscription-info">
+            <span *ngIf="tenant.isInTrialPeriod && !subscriptionIsExpiringSoon()" [innerHTML]="getTrialSubscriptionNotification()"></span>
+            <a *ngIf="subscriptionIsExpiringSoon()" routerLink="/app/admin/subscription-management">
+                <span *ngIf="subscriptionIsExpiringSoon() && tenant.isInTrialPeriod"><i class="fa fa-exclamation-circle"></i> {{getExpireNotification("TrialExpireNotification")}}</span>
+                <span *ngIf="subscriptionIsExpiringSoon() && !tenant.isInTrialPeriod"><i class="fa fa-exclamation-circle"></i> {{getExpireNotification("SubscriptionExpireNotification")}}</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+<loginAttemptsModal #loginAttemptsModal></loginAttemptsModal>
+<linkedAccountsModal #linkedAccountsModal (modalClose)="getRecentlyLinkedUsers()"></linkedAccountsModal>
+<changePasswordModal #changePasswordModal></changePasswordModal>
+<changeProfilePictureModal #changeProfilePictureModal></changeProfilePictureModal>
+<mySettingsModal #mySettingsModal (modalSave)="onMySettingsModalSaved()"></mySettingsModal>
+<notificationSettingsModal #notificationSettingsModal></notificationSettingsModal>

@@ -1,0 +1,125 @@
+﻿<div [@routerTransition]>
+    <div class="row margin-bottom-5">
+        <div class="col-xs-12">
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>
+                        <span>{{l("Subscription")}}</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portlet light margin-bottom-0">
+        <div class="portlet-body">
+
+            <tabset class="tab-container tabbable-line">
+                <tab heading="{{l('SubscriptionInformation')}}">
+                    <div class="form">
+                        <form class="form-horizontal">
+
+                            <input type="hidden" Name="PaymentPeriodType" value="@tenant.PaymentPeriodType" />
+                            <input type="hidden" Name="Gateway" value="@SubscriptionPaymentGatewayType.Paypal" />
+
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label bold">{{l("Edition")}}</label>
+                                <div class="col-sm-8">
+                                    <p *ngIf="tenant.edition" class="form-control-static">
+                                        {{tenant.edition.displayName}}
+                                        <span *ngIf="tenant.edition.isFree" class="label label-success">{{l("Free")}}</span>
+                                        <span *ngIf="tenant.isInTrialPeriod" class="label label-warning">{{l("Trial")}}</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label bold">{{l("SubscriptionStartDate")}}</label>
+                                <div class="col-sm-8">
+                                    <p class="form-control-static">{{ tenant.creationTimeString }}</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label bold">{{l("SubscriptionEndDate")}}</label>
+                                <div class="col-sm-8">
+                                    <p *ngIf="tenant.edition" class="form-control-static">
+                                        <span>{{tenant.subscriptionDateString}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label"></label>
+                                <div class="col-sm-8">
+                                    <a *ngIf="tenant.edition && !tenant.edition.isFree && !tenant.isInTrialPeriod"
+                                       [routerLink]="['/account/extend']" [queryParams]="{ editionPaymentType: editionPaymentType.Extend}" class="btn btn-info">
+                                        {{l("Extend")}}
+                                    </a>
+                                    <a *ngIf="tenant.isInTrialPeriod"
+                                       [routerLink]="['/account/buy']" [queryParams]="{editionPaymentType: editionPaymentType.BuyNow, editionId: tenant.edition.id }"
+                                       class="btn btn-info">
+                                        {{l("BuyNow")}}
+                                    </a>
+                                    <a *ngIf="tenant.edition && (tenant.edition.isFree || !tenant.edition.isHighestEdition) && !tenant.isInTrialPeriod"
+                                       [routerLink]="['/account/select-edition']" class="btn btn-warning">
+                                        {{l("Upgrade")}}
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </tab>
+                <tab heading="{{l('PaymentHistory')}}">
+
+                    <div class="primeng-datatable-container"
+                         [busyIf]="primengDatatableHelper.isLoading">
+                        <p-dataTable #dataTable
+                                     (onLazyLoad)="getPaymentHistory($event)"
+                                     [value]="primengDatatableHelper.records"
+                                     rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                                     [paginator]="false"
+                                     [lazy]="true"
+                                     emptyMessage="{{l('NoData')}}"
+                                     [responsive]="primengDatatableHelper.isResponsive">
+
+                            <p-column field="creationTime" header="{{l('ProcessTime')}}" [sortable]="true">
+                                <ng-template let-record="rowData" pTemplate="body">
+                                    <span *ngIf="record.creationTime">{{record.creationTime | momentFormat:'L'}}</span>
+                                    <span *ngIf="!record.creationTime">-</span>
+                                </ng-template>
+                            </p-column>
+                            <p-column field="editionDisplayName" header="{{l('Edition')}}" [sortable]="true"></p-column>
+                            <p-column field="gateway" header="{{l('Gateway')}}" [sortable]="true">
+                                <ng-template let-record="rowData" pTemplate="body">
+                                    {{l('SubscriptionPaymentGatewayType_' + record.gateway)}}
+                                </ng-template>
+                            </p-column>
+                            <p-column field="amount" header="{{l('Amount')}}" [sortable]="true"></p-column>
+                            <p-column field="status" header="{{l('Status')}}" [sortable]="true">
+                                <ng-template let-record="rowData" pTemplate="body">
+                                    {{l('SubscriptionPaymentStatus_' + record.status)}}
+                                </ng-template>
+                            </p-column>
+                            <p-column field="paymentPeriodType" header="{{l('Period')}}" [sortable]="true">
+                                <ng-template let-record="rowData" pTemplate="body">
+                                    {{l('PaymentPeriodType_' + record.paymentPeriodType)}}
+                                </ng-template>
+                            </p-column>
+                            <p-column field="dayCount" header="{{l('DayCount')}}" [sortable]="false"></p-column>
+                            <p-column field="paymentId" header="{{l('PaymentId')}}" [sortable]="false"></p-column>
+                        </p-dataTable>
+                        <div class="primeng-paging-container">
+                            <p-paginator rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                                         #paginator
+                                         (onPageChange)="getPaymentHistory($event)"
+                                         [totalRecords]="primengDatatableHelper.totalRecordsCount"
+                                         [rowsPerPageOptions]="primengDatatableHelper.predefinedRecordsCountPerPage">
+                            </p-paginator>
+                            <span class="total-records-count">
+                                {{l('TotalRecordsCount', primengDatatableHelper.totalRecordsCount)}}
+                            </span>
+                        </div>
+                    </div>
+                </tab>
+            </tabset>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+﻿.primeng-datatable-container {
+  /*Sets footer when no paging*/
+}
+.primeng-datatable-container .ui-datatable table {
+  table-layout: fixed;
+}
+.primeng-datatable-container .ui-datatable table th,
+.primeng-datatable-container .ui-datatable table td {
+  overflow-wrap: break-word;
+}
+.primeng-datatable-container .ui-datatable table thead th,
+.primeng-datatable-container .ui-datatable table tfoot td {
+  text-align: left ;
+}
+.primeng-datatable-container .ui-datatable .ui-datatable-thead > tr > th > span.ui-sortable-column-icon {
+  color: #bdbdbd;
+  float: right;
+}
+.primeng-datatable-container .ui-datatable .ui-datatable-thead > tr > th,
+.primeng-datatable-container .ui-datatable body .ui-datatable .ui-datatable-tfoot > tr > td {
+  background-color: #e6e6e6 !important;
+}
+.primeng-datatable-container .ui-datatable thead th.ui-state-active {
+  background-color: #3598dc !important;
+  border: 0 !important;
+}
+.primeng-datatable-container .ui-paginator-bottom {
+  text-align: left !important;
+}
+.primeng-datatable-container .ui-paginator {
+  text-align: left !important;
+  border-top: 0 !important;
+}
+.primeng-datatable-container .ui-datatable-tablewrapper > table > thead > tr > th.ui-state-active > span.ui-sortable-column-icon {
+  color: #ffffff !important;
+}
+.primeng-datatable-container .ui-state-active,
+.primeng-datatable-container .ui-state-highlight {
+  background-color: #3598dc !important;
+}
+.primeng-datatable-container .ui-paginator .ui-paginator-first,
+.primeng-datatable-container .ui-paginator .ui-paginator-prev,
+.primeng-datatable-container .ui-paginator .ui-paginator-next,
+.primeng-datatable-container .ui-paginator .ui-paginator-last {
+  color: #3598dc !important;
+}
+.primeng-datatable-container .primeng-paging-container {
+  position: relative;
+}
+@media (min-width: 515px) {
+  .primeng-datatable-container .primeng-paging-container .total-records-count {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    margin: 5px;
+  }
+}
+.primeng-datatable-container p-datatable[ng-reflect-paginator=false] .ui-datatable-footer {
+  padding: 5px 10px 5px 5px;
+  text-align: right;
+  background-color: #ffffff;
+}
